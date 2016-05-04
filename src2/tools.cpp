@@ -6,7 +6,7 @@
 #include <boost/range/adaptors.hpp>
 #include <boost/range/algorithm.hpp>
 #include <boost/function.hpp>
-#include <cl.hpp>
+//#include <cl.hpp>
 #include <fstream>
 
 using namespace boost;
@@ -33,8 +33,9 @@ double PDM(const vector<feature> fset1, const vector<feature> fset2) {
 }
 
 
-double PDM_OpenCL(vector<feature> fset1, vector<feature> fset2) {
 
+double PDM_OpenCL(vector<feature> fset1, vector<feature> fset2) {
+/*
     vector<float> v{1, 2, 3, 4};
     using namespace cl;
     using namespace std;
@@ -53,28 +54,6 @@ double PDM_OpenCL(vector<feature> fset1, vector<feature> fset2) {
     //  Program prog = Program(ctx,str.c_str());
     //  cl_int cc = prog.build(devs);
     // printf("%d\n", cc);
-}
-
-
-double qGaussian(float x, float q, float b) {
-    assert(q < 3);
-    double cq;
-    double eq;
-    if (q < 1) {
-        cq = (2 * sqrt(M_PI) * tgamma(1. / (1 - q)));
-        cq /= (3 - q) * sqrt(1 - q) * tgamma((3 - q) / (2. - 2. * q));
-        eq = pow(1 + ((1 - q) * ((-b) * x * x)), 1. / (1. - q));
-    } else if (q > 1) {
-        cq = sqrt(M_PI) * tgamma((3 - q) / (2.*q - 2.));
-        cq /= sqrt(q - 1) * tgamma(1. / (q - 1));
-        eq = pow(1 + ((1 - q) * ((-b) * x * x)), 1. / (1. - q));
-    } else {
-        //q == 1;
-        cq = sqrt(M_PI);
-        eq = exp(-b * x * x);
-    }
-    double res = sqrt(b) / cq * eq;
-    printf("cq = %.2f    eq = %.2f    res = %.2f\n",cq,eq, res);
-    return res < 0 ? 0 : res;
+  */  return 0;
 }
 

@@ -1,17 +1,26 @@
 cmake_minimum_required(VERSION 3.2.2) # CMake version check
+#set(CMAKE_CXX_COMPILER g++-mp-6) # Enable c++11 standard
 project(simple_example )               # Create project "simple_example"
+
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O3") # Enable c++11 standard
 
 
 FIND_PACKAGE(OpenCV REQUIRED)
 FIND_PACKAGE(Boost REQUIRED)
-FIND_PACKAGE(OpenCL REQUIRED)
-FIND_PACKAGE(Matlab COMPONENTS ENG_LIBRARY MEX_LIBRARY MX_LIBRARY)
-message(STATUS ${OpenCL_LIBRARIES})
-message(STATUS ${Matlab_INCLUDE_DIRS})
-message(STATUS ${Matlab_ENG_LIBRARY})
+FIND_PACKAGE(Qt5Core)
+FIND_PACKAGE(Qt5Concurrent)
+#FIND_PACKAGE(OpenCL REQUIRED)
+#FIND_PACKAGE(Matlab COMPONENTS ENG_LIBRARY MEX_LIBRARY MX_LIBRARY)
+#message(STATUS ${OpenCL_LIBRARIES})
+#message(STATUS ${Matlab_INCLUDE_DIRS})
+#message(STATUS ${Matlab_ENG_LIBRARY})
+message(STATUS ${Qt5Core_VERSION})
+message(STATUS ${OpenCV_VERSION})
+message(STATUS ${CMAKE_CXX_COMPILER_VERSION})
+message(STATUS ${OpenCV_LIBRARIES})
+set(CMAKE_AUTOMOC ON)
 
-include_directories(${OpenCV_INCLUDE_DIRECTORIES} include include2 ${Boost_INCLUDE_DIRS} ${OpenCL_INCLUDE_DIRS} ${Matlab_INCLUDE_DIRS})
+include_directories(${OpenCV_INCLUDE_DIRECTORIES} include include2 ${Boost_INCLUDE_DIRS} ${OpenCL_INCLUDE_DIRS} ${Matlab_INCLUDE_DIRS} ${Qt5Core_INCLUDE_DIRS} ${Qt5Concurrent_INCLUDE_DIRS})
 
 
 set(SOURCE_FILES
@@ -53,3 +62,12 @@ target_link_libraries(TestPDM sift utilities ${OpenCV_LIBRARIES} ${OpenCL_LIBRAR
 
 add_executable(OrdenacaoSift ${EXP_SRC}/OrdenacaoSift/main.cpp)
 target_link_libraries(OrdenacaoSift sift utilities ${OpenCV_LIBRARIES} ${OpenCL_LIBRARIES} ${Matlab_LIBRARIES})
+
+add_executable(GaussianTest ${EXP_SRC}/GaussianTest/main.cpp)
+target_link_libraries(GaussianTest utilities ${OpenCV_LIBRARIES} ${OpenCL_LIBRARIES} ${Matlab_LIBRARIES})
+
+add_executable(OrdenacaoSift2 ${EXP_SRC}/OrdenacaoSift2/main.cpp)
+target_link_libraries(OrdenacaoSift2 sift utilities ${OpenCV_LIBRARIES} ${OpenCL_LIBRARIES} ${Matlab_LIBRARIES} ${Qt5Core_LIBRARIES} ${Qt5Concurrent_LIBRARIES})
+
+add_executable(Conversor ${EXP_SRC}/Conversor/main.cpp)
+target_link_libraries(Conversor ${OpenCV_LIBRARIES} ${OpenCL_LIBRARIES} ${Qt5Core_LIBRARIES} ${Qt5Concurrent_LIBRARIES})

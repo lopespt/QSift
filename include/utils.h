@@ -156,7 +156,7 @@ extern char *prepend_path(const char *path, const char *file);
 
    @return Returns the basename of \a pathname.
 */
-extern char *basename(const char *pathname);
+//extern char *basename(const char *pathname);
 
 
 /**
@@ -265,6 +265,10 @@ extern void vid_view(IplImage **imgs, int n, char *win_name);
    @return Returns 1 if the window named \a name has been closed or 0 otherwise
 */
 extern int win_closed(char *name);
+
+/*extern int cvRound(double i){
+  return (int)(i+0.5);
+}*/
 
 #endif
 

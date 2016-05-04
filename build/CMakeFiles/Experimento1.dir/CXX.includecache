@@ -9,10 +9,14 @@
 ../include/imgfeatures.h
 cxcore.h
 ../include/cxcore.h
+math.h
+-
 
 ../include/sift.h
 cxcore.h
 ../include/cxcore.h
+math.h
+-
 
 ../include/utils.h
 cxcore.h
@@ -31,6 +35,8 @@ imgfeatures.h
 -
 utils.h
 -
+
+/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/Experimento1_automoc.cpp
 
 /opt/local/include/opencv/cxcore.h
 opencv2/core/core_c.h

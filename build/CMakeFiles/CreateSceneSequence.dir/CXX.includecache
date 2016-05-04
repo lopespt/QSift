@@ -9,21 +9,33 @@
 ../include/imgfeatures.h
 cxcore.h
 ../include/cxcore.h
+math.h
+-
 
 ../include/sift.h
 cxcore.h
 ../include/cxcore.h
+math.h
+-
 
 ../include2/VideoSift.hpp
-string
--
 opencv2/highgui/highgui.hpp
+-
+opencv2/imgproc.hpp
+-
+opencv2/core/core.hpp
+-
+opencv2/core/mat.hpp
 -
 sift.h
 -
 imgfeatures.h
 -
 vector
+-
+string
+-
+mutex
 -
 
 ../include2/tools.hpp
@@ -43,6 +55,10 @@ sift.h
 -
 tools.hpp
 -
+type_traits
+-
+
+/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CreateSceneSequence_automoc.cpp
 
 /opt/local/include/opencv/cxcore.h
 opencv2/core/core_c.h
@@ -111,6 +127,10 @@ opencv2/core/neon_utils.hpp
 /opt/local/include/opencv2/core/opencv2/core/neon_utils.hpp
 
 /opt/local/include/opencv2/core/bufferpool.hpp
+
+/opt/local/include/opencv2/core/core.hpp
+opencv2/core.hpp
+/opt/local/include/opencv2/core/opencv2/core.hpp
 
 /opt/local/include/opencv2/core/core_c.h
 opencv2/core/types_c.h

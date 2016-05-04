@@ -10,6 +10,8 @@
 #define IMGFEATURES_H
 
 #include "cxcore.h"
+#include <math.h>
+//#define cvRound(x) ((int)round(x))
 
 
 #ifdef __cplusplus

@@ -26,6 +26,8 @@
 extern "C" {
 #endif
 
+#include <math.h>
+//#define cvRound(x) ((int)round(x))
 /******************************** Structures *********************************/
 
 /** holds feature data relevant to detection */
@@ -116,6 +118,7 @@ struct feature;
    @see _sift_features()
 */
 extern int sift_features(IplImage *img, struct feature **feat);
+extern int qsift_features(IplImage *img, struct feature **feat, double *qs, double *b);
 
 
 /**
@@ -147,8 +150,19 @@ extern int sift_features(IplImage *img, struct feature **feat);
 */
 extern int _sift_features(IplImage *img, struct feature **feat, int intvls,
 						  double sigma, double contr_thr, int curv_thr,
-						  int img_dbl, int descr_width, int descr_hist_bins);
+						  int img_dbl, int descr_width, int descr_hist_bins, int useQgaussian, double *qs, double *b);
 
+
+IplImage*** build_gauss_pyr( IplImage* base, int octvs,
+									int intvls, double sigma, int useQgaussian, double *qs, double *b);
+
+void release_pyr( IplImage**** pyr, int octvs, int n );
+IplImage* create_init_img( IplImage* img, int img_dbl, double sigma );
+CvMat *createGaussianKernel(double desv);
+CvMat *createQGaussianKernel(double q, double b);
+void printMat(CvMat *mat);
+double Gaussian(double x, double desv);
+double qGaussian(double x, double q, double b);
 
 
 #ifdef __cplusplus

@@ -6,13 +6,14 @@
   @version 1.1.2-20100521
 */
 
+#include <math.h>
+#define cvRound(x) ((int)round(x))
+#define cvRound2(x) ((int)round(x))
 #include "utils.h"
 #include "imgfeatures.h"
 
-#include <math.h>
 #include <opencv2/imgproc/imgproc_c.h>
 
-#define cvRound(x) ((int)round(x))
 
 static int import_oxfd_features( char*, struct feature** );
 static int export_oxfd_features( char*, struct feature*, int );
@@ -574,19 +575,19 @@ static void draw_lowe_feature( IplImage* img, struct feature* feat,
   CvPoint start, end, h1, h2;
 
   /* compute points for an arrow scaled and rotated by feat's scl and ori */
-  start_x = cvRound( feat->x );
-  start_y = cvRound( feat->y );
+  start_x = cvRound2( feat->x );
+  start_y = cvRound2( feat->y );
   scl = feat->scl;
   ori = feat->ori;
-  len = cvRound( scl * scale );
-  hlen = cvRound( scl * hscale );
+  len = cvRound2( scl * scale );
+  hlen = cvRound2( scl * hscale );
   blen = len - hlen;
-  end_x = cvRound( len *  cos( ori ) ) + start_x;
-  end_y = cvRound( len * -sin( ori ) ) + start_y;
-  h1_x = cvRound( blen *  cos( ori + CV_PI / 18.0 ) ) + start_x;
-  h1_y = cvRound( blen * -sin( ori + CV_PI / 18.0 ) ) + start_y;
-  h2_x = cvRound( blen *  cos( ori - CV_PI / 18.0 ) ) + start_x;
-  h2_y = cvRound( blen * -sin( ori - CV_PI / 18.0 ) ) + start_y;
+  end_x = cvRound2( len *  cos( ori ) ) + start_x;
+  end_y = cvRound2( len * -sin( ori ) ) + start_y;
+  h1_x = cvRound2( blen *  cos( ori + CV_PI / 18.0 ) ) + start_x;
+  h1_y = cvRound2( blen * -sin( ori + CV_PI / 18.0 ) ) + start_y;
+  h2_x = cvRound2( blen *  cos( ori - CV_PI / 18.0 ) ) + start_x;
+  h2_y = cvRound2( blen * -sin( ori - CV_PI / 18.0 ) ) + start_y;
   start = cvPoint( start_x, start_y );
   end = cvPoint( end_x, end_y );
   h1 = cvPoint( h1_x, h1_y );

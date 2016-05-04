@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
 
     int points = _sift_features(img, &feat, SIFT_INTVLS, SIFT_SIGMA, SIFT_CONTR_THR,
                            SIFT_CURV_THR, SIFT_IMG_DBL, SIFT_DESCR_WIDTH,
-                           SIFT_DESCR_HIST_BINS );
+                           SIFT_DESCR_HIST_BINS, 0, NULL,NULL );
     printf("%d\n", points);
     for(int i=0; i<10; i++){
         printf("x: %-4.0f  %-4.0f\n", feat[i].x, feat[i].y);
@@ -50,7 +50,7 @@ int main(int argc, char *argv[]) {
 
     points = _sift_features( img2, &feat, SIFT_INTVLS, SIFT_SIGMA, SIFT_CONTR_THR,
                                  SIFT_CURV_THR, SIFT_IMG_DBL, SIFT_DESCR_WIDTH,
-                                 SIFT_DESCR_HIST_BINS );
+                                 SIFT_DESCR_HIST_BINS, 0, NULL,NULL );
     printf("%d\n", points);
     for(int i=0; i<10; i++){
         printf("x: %-4.0f  %-4.0f\n", feat[i].x, feat[i].y);

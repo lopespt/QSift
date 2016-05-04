@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/Experimento1_automoc.cpp" "/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/Experimento1.dir/Experimento1_automoc.cpp.o"
   "/Users/wachs/Dropbox/SIFT/CPP/OpenSift/Experimentos/Exp1/main.cpp" "/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/Experimento1.dir/Experimentos/Exp1/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
@@ -13,8 +14,11 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
   "../include2"
   "/opt/local/include"
-  "/System/Library/Frameworks/OpenCL.framework"
-  "/Applications/MATLAB_R2015a.app/extern/include"
+  "/Users/wachs/Qt/5.3/clang_64/lib/QtCore.framework"
+  "/Users/wachs/Qt/5.3/clang_64/lib/QtCore.framework/Headers"
+  "/Users/wachs/Qt/5.3/clang_64/mkspecs/macx-clang"
+  "/Users/wachs/Qt/5.3/clang_64/lib/QtConcurrent.framework"
+  "/Users/wachs/Qt/5.3/clang_64/lib/QtConcurrent.framework/Headers"
   "/opt/local/include/opencv"
   )
 

@@ -1,4 +1,14 @@
 file(REMOVE_RECURSE
+  "Conversor_automoc.cpp"
+  "OrdenacaoSift2_automoc.cpp"
+  "GaussianTest_automoc.cpp"
+  "sift_automoc.cpp"
+  "TestPDM_automoc.cpp"
+  "Experimento2_automoc.cpp"
+  "Experimento1_automoc.cpp"
+  "OrdenacaoSift_automoc.cpp"
+  "utilities_automoc.cpp"
+  "CreateSceneSequence_automoc.cpp"
   "CMakeFiles/sift.dir/src/dspfeat.c.o"
   "CMakeFiles/sift.dir/src/imgfeatures.c.o"
   "CMakeFiles/sift.dir/src/kdtree.c.o"
@@ -10,6 +20,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/sift.dir/src/xform.c.o"
   "CMakeFiles/sift.dir/src2/VideoSift.cpp.o"
   "CMakeFiles/sift.dir/src2/tools.cpp.o"
+  "CMakeFiles/sift.dir/sift_automoc.cpp.o"
   "libsift.pdb"
   "libsift.a"
 )

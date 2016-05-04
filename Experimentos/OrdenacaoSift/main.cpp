@@ -7,11 +7,11 @@
 #include <VideoSift.hpp>
 #include <random>
 #include <tools.hpp>
-#include <engine.h>
-#include <sift.h>
+//#include <engine.h>
 
 
 #define VIDEO_SRC "/Users/wachs/Dropbox/SIFT/Videos/MundoVisto-de-Cima/ScreenCaptureProject108.mp4"
+#define IMG_SRC "/Users/wachs/Dropbox/Tchu/Viagens/Socorro/P7230168.JPG"
 #define CutThreshold 200000
 #define startFrame 8041
 #define endFrame 8346
@@ -24,7 +24,8 @@ struct FrameInfo {
     int frame_num;
 
 };
-bool operator ==(const FrameInfo&a, const FrameInfo& b){
+
+bool operator==(const FrameInfo &a, const FrameInfo &b) {
     return a.frame_num == b.frame_num;
 }
 
@@ -84,39 +85,65 @@ vector<FrameInfo> createVectorSpace(char *source, int sFrame, int eFrame) {
     }
     return list;
 }
+/*
+void plotMatlab(Engine *e, vector<double> v, vector<double> x = vector<double>()) {
+    mxArray *ret = mxCreateDoubleMatrix(v.size(), 1, mxREAL);
+    double *retv = (double *) mxGetData(ret);
+    memcpy(retv, v.data(), sizeof(double) * v.size());
+    engPutVariable(e, "plMatlab", ret);
+    engEvalString(e, "plot(plMatlab);");
 
-void plotMatlab(Engine* e, vector<double> v, vector<double> x = vector<double>()){
-    mxArray *ret = mxCreateDoubleMatrix(v.size(),1,mxREAL);
-    double *retv = (double*)mxGetData(ret);
-    memcpy(retv,v.data(),sizeof(double)*v.size());
-    engPutVariable(e,"plMatlab",ret);
-    engEvalString(e,"plot(plMatlab);");
-
-    if(x.size()!=0){
-        mxArray *ret2 = mxCreateDoubleMatrix(v.size(),1,mxREAL);
-        double *retv2 = (double*)mxGetData(ret2);
-        memcpy(retv2,x.data(),sizeof(double)*x.size());
-        engPutVariable(e,"plMatlab2",ret2);
-        engEvalString(e,"plot(plMatlab2, plMatlab);");
+    if (x.size() != 0) {
+        mxArray *ret2 = mxCreateDoubleMatrix(v.size(), 1, mxREAL);
+        double *retv2 = (double *) mxGetData(ret2);
+        memcpy(retv2, x.data(), sizeof(double) * x.size());
+        engPutVariable(e, "plMatlab2", ret2);
+        engEvalString(e, "plot(plMatlab2, plMatlab);");
         getchar();
-        engEvalString(e,"delete plMatab2;");
+        engEvalString(e, "delete plMatab2;");
         mxDestroyArray(ret2);
-    }else{
-        engEvalString(e,"plot(plMatlab);");
+    } else {
+        engEvalString(e, "plot(plMatlab);");
         getchar();
     }
 
-    engEvalString(e,"delete plMatab;");
+    engEvalString(e, "delete plMatab;");
     mxDestroyArray(ret);
 }
-
+*/
 
 int main(int argc, char *argv[]) {
+
     srand((unsigned int) time(0));
     int i = 10;
     //vector<FrameInfo> list = createVectorSpace(VIDEO_SRC, startFrame, startFrame + 10);
     //vector<FrameInfo> ordenados = ordena(list);
 
+    IplImage *img = cvLoadImage(IMG_SRC, CV_LOAD_IMAGE_GRAYSCALE);
+    IplImage *img2 = cvCreateImage(cvSize(img->width / 10, img->height / 10), img->depth, img->nChannels);
+    cvResize(img, img2);
+    IplImage *img3 = create_init_img(img2, 0, SIFT_SIGMA);
+    double qs[] = {2, 0.75,1.1};
+    double b = 1;
+    IplImage ***octave = build_gauss_pyr(img3, 3, 3, SIFT_SIGMA, 1, qs, &b);
+    cvReleaseImage(&img);
+    cvReleaseImage(&img2);
+
+    char name[40];
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            sprintf(name, "%d %d", i, j);
+            cvShowImage(name, octave[i][j]);
+        }
+    }
+
+
+    cvWaitKey(0);
+    release_pyr(&octave, 3, 3);
+
+
+    cvReleaseImage(&img3);
 
 
     return 0;

@@ -15,6 +15,7 @@ using namespace std;
 double PDM(vector<feature> fset1, vector<feature> fset2);
 double PDM_OpenCL(vector<feature> fset1, vector<feature> fset2);
 double qGaussian(float x, float q, float b);
+CvMat * createQGaussianKernel();
 
 
 #endif //SIMPLE_EXAMPLE_TOOLS_HPP

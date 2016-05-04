@@ -9,6 +9,8 @@
 ../include/imgfeatures.h
 cxcore.h
 ../include/cxcore.h
+math.h
+-
 
 ../include/kdtree.h
 cxcore.h
@@ -21,6 +23,8 @@ stdlib.h
 ../include/sift.h
 cxcore.h
 ../include/cxcore.h
+math.h
+-
 
 ../include/utils.h
 cxcore.h
@@ -47,12 +51,12 @@ unistd.h
 -
 
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/src/imgfeatures.c
+math.h
+-
 utils.h
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/src/utils.h
 imgfeatures.h
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/src/imgfeatures.h
-math.h
--
 opencv2/imgproc/imgproc_c.h
 -
 
@@ -101,18 +105,20 @@ limits.h
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/src/sift.c
 sift.h
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/src/sift.h
+math.h
+-
 imgfeatures.h
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/src/imgfeatures.h
 utils.h
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/src/utils.h
-math.h
--
-cxcore.h
--
 cv.h
+-
+opencv2/core/types_c.h
 -
 
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/src/siftfeat.c
+math.h
+-
 sift.h
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/src/sift.h
 imgfeatures.h

@@ -14,6 +14,8 @@
 
   Version: 1.1.2-20100521
 */
+#include <math.h>
+//#define cvRound(x) ((int)round(x))
 
 #include "sift.h"
 #include "imgfeatures.h"
@@ -22,6 +24,8 @@
 #include <highgui.h>
 
 #include <unistd.h>
+
+
 
 #define OPTIONS ":o:m:i:s:c:r:n:b:dxh"
 
@@ -61,7 +65,7 @@ int main( int argc, char** argv )
   if( ! img )
     fatal_error( "unable to load image from %s", img_file_name );
   n = _sift_features( img, &features, intvls, sigma, contr_thr, curv_thr,
-		      img_dbl, descr_width, descr_hist_bins );
+		      img_dbl, descr_width, descr_hist_bins, 0, NULL, NULL );
   fprintf( stderr, "Found %d features.\n", n );
   
   if( display )
