@@ -1,14 +1,15 @@
-/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/edit_cache.dir
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/Conversor.dir
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/OrdenacaoSift2.dir
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/GaussianTest.dir
+/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/rebuild_cache.dir
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/sift.dir
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/TestPDM.dir
-/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/rebuild_cache.dir
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/Experimento2.dir
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/Experimento1.dir
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/OrdenacaoSift.dir
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/utilities.dir
+/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/edit_cache.dir
+/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/OpenMP.dir
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/CreateSceneSequence.dir
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/Conversor_automoc.dir
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/OrdenacaoSift2_automoc.dir
@@ -19,4 +20,5 @@
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/Experimento1_automoc.dir
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/OrdenacaoSift_automoc.dir
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/utilities_automoc.dir
+/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/OpenMP_automoc.dir
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/CreateSceneSequence_automoc.dir

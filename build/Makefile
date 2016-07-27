@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/wachs/Dropbox/SIFT/CPP/OpenSift/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/opt/local/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,6 +66,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/opt/local/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -228,6 +228,19 @@ utilities/fast:
 .PHONY : utilities/fast
 
 #=============================================================================
+# Target rules for targets named OpenMP
+
+# Build rule for target.
+OpenMP: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenMP
+.PHONY : OpenMP
+
+# fast build rule for target.
+OpenMP/fast:
+	$(MAKE) -f CMakeFiles/OpenMP.dir/build.make CMakeFiles/OpenMP.dir/build
+.PHONY : OpenMP/fast
+
+#=============================================================================
 # Target rules for targets named CreateSceneSequence
 
 # Build rule for target.
@@ -356,6 +369,19 @@ utilities_automoc: cmake_check_build_system
 utilities_automoc/fast:
 	$(MAKE) -f CMakeFiles/utilities_automoc.dir/build.make CMakeFiles/utilities_automoc.dir/build
 .PHONY : utilities_automoc/fast
+
+#=============================================================================
+# Target rules for targets named OpenMP_automoc
+
+# Build rule for target.
+OpenMP_automoc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 OpenMP_automoc
+.PHONY : OpenMP_automoc
+
+# fast build rule for target.
+OpenMP_automoc/fast:
+	$(MAKE) -f CMakeFiles/OpenMP_automoc.dir/build.make CMakeFiles/OpenMP_automoc.dir/build
+.PHONY : OpenMP_automoc/fast
 
 #=============================================================================
 # Target rules for targets named CreateSceneSequence_automoc
@@ -613,6 +639,33 @@ Experimentos/GaussianTest/main.cpp.s:
 	$(MAKE) -f CMakeFiles/GaussianTest.dir/build.make CMakeFiles/GaussianTest.dir/Experimentos/GaussianTest/main.cpp.s
 .PHONY : Experimentos/GaussianTest/main.cpp.s
 
+Experimentos/OpenMP/main.o: Experimentos/OpenMP/main.cpp.o
+
+.PHONY : Experimentos/OpenMP/main.o
+
+# target to build an object file
+Experimentos/OpenMP/main.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenMP.dir/build.make CMakeFiles/OpenMP.dir/Experimentos/OpenMP/main.cpp.o
+.PHONY : Experimentos/OpenMP/main.cpp.o
+
+Experimentos/OpenMP/main.i: Experimentos/OpenMP/main.cpp.i
+
+.PHONY : Experimentos/OpenMP/main.i
+
+# target to preprocess a source file
+Experimentos/OpenMP/main.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenMP.dir/build.make CMakeFiles/OpenMP.dir/Experimentos/OpenMP/main.cpp.i
+.PHONY : Experimentos/OpenMP/main.cpp.i
+
+Experimentos/OpenMP/main.s: Experimentos/OpenMP/main.cpp.s
+
+.PHONY : Experimentos/OpenMP/main.s
+
+# target to generate assembly for a file
+Experimentos/OpenMP/main.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenMP.dir/build.make CMakeFiles/OpenMP.dir/Experimentos/OpenMP/main.cpp.s
+.PHONY : Experimentos/OpenMP/main.cpp.s
+
 Experimentos/OrdenacaoSift/main.o: Experimentos/OrdenacaoSift/main.cpp.o
 
 .PHONY : Experimentos/OrdenacaoSift/main.o
@@ -720,6 +773,33 @@ GaussianTest_automoc.s: GaussianTest_automoc.cpp.s
 GaussianTest_automoc.cpp.s:
 	$(MAKE) -f CMakeFiles/GaussianTest.dir/build.make CMakeFiles/GaussianTest.dir/GaussianTest_automoc.cpp.s
 .PHONY : GaussianTest_automoc.cpp.s
+
+OpenMP_automoc.o: OpenMP_automoc.cpp.o
+
+.PHONY : OpenMP_automoc.o
+
+# target to build an object file
+OpenMP_automoc.cpp.o:
+	$(MAKE) -f CMakeFiles/OpenMP.dir/build.make CMakeFiles/OpenMP.dir/OpenMP_automoc.cpp.o
+.PHONY : OpenMP_automoc.cpp.o
+
+OpenMP_automoc.i: OpenMP_automoc.cpp.i
+
+.PHONY : OpenMP_automoc.i
+
+# target to preprocess a source file
+OpenMP_automoc.cpp.i:
+	$(MAKE) -f CMakeFiles/OpenMP.dir/build.make CMakeFiles/OpenMP.dir/OpenMP_automoc.cpp.i
+.PHONY : OpenMP_automoc.cpp.i
+
+OpenMP_automoc.s: OpenMP_automoc.cpp.s
+
+.PHONY : OpenMP_automoc.s
+
+# target to generate assembly for a file
+OpenMP_automoc.cpp.s:
+	$(MAKE) -f CMakeFiles/OpenMP.dir/build.make CMakeFiles/OpenMP.dir/OpenMP_automoc.cpp.s
+.PHONY : OpenMP_automoc.cpp.s
 
 OrdenacaoSift2_automoc.o: OrdenacaoSift2_automoc.cpp.o
 
@@ -1165,17 +1245,18 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
 	@echo "... Conversor"
 	@echo "... OrdenacaoSift2"
 	@echo "... GaussianTest"
+	@echo "... rebuild_cache"
 	@echo "... sift"
 	@echo "... TestPDM"
-	@echo "... rebuild_cache"
 	@echo "... Experimento2"
 	@echo "... Experimento1"
 	@echo "... OrdenacaoSift"
 	@echo "... utilities"
+	@echo "... edit_cache"
+	@echo "... OpenMP"
 	@echo "... CreateSceneSequence"
 	@echo "... Conversor_automoc"
 	@echo "... OrdenacaoSift2_automoc"
@@ -1186,6 +1267,7 @@ help:
 	@echo "... Experimento1_automoc"
 	@echo "... OrdenacaoSift_automoc"
 	@echo "... utilities_automoc"
+	@echo "... OpenMP_automoc"
 	@echo "... CreateSceneSequence_automoc"
 	@echo "... Conversor_automoc.o"
 	@echo "... Conversor_automoc.i"
@@ -1214,6 +1296,9 @@ help:
 	@echo "... Experimentos/GaussianTest/main.o"
 	@echo "... Experimentos/GaussianTest/main.i"
 	@echo "... Experimentos/GaussianTest/main.s"
+	@echo "... Experimentos/OpenMP/main.o"
+	@echo "... Experimentos/OpenMP/main.i"
+	@echo "... Experimentos/OpenMP/main.s"
 	@echo "... Experimentos/OrdenacaoSift/main.o"
 	@echo "... Experimentos/OrdenacaoSift/main.i"
 	@echo "... Experimentos/OrdenacaoSift/main.s"
@@ -1226,6 +1311,9 @@ help:
 	@echo "... GaussianTest_automoc.o"
 	@echo "... GaussianTest_automoc.i"
 	@echo "... GaussianTest_automoc.s"
+	@echo "... OpenMP_automoc.o"
+	@echo "... OpenMP_automoc.i"
+	@echo "... OpenMP_automoc.s"
 	@echo "... OrdenacaoSift2_automoc.o"
 	@echo "... OrdenacaoSift2_automoc.i"
 	@echo "... OrdenacaoSift2_automoc.s"

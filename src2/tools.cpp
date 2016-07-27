@@ -7,13 +7,42 @@
 #include <boost/range/algorithm.hpp>
 #include <boost/function.hpp>
 //#include <cl.hpp>
-#include <fstream>
+#include <algorithm>
 
-using namespace boost;
+using namespace std;
 
 double PDM(const vector<feature> fset1, const vector<feature> fset2) {
     double dist = 0;
 
+    for (int i = 0; i < fset1.size(); i++) {
+        vector<double> dists(fset2.size());
+        std::transform(fset2.begin(), fset2.end(),dists.begin() , [&](feature f){
+            return descr_dist_sq(&f, &fset1[i]);
+        });
+        if(dists.size() == 0) {
+            return DBL_MAX;
+        }else{
+            dist += *std::min_element(dists.begin(), dists.end());
+        }
+    }
+    for (int i = 0; i < fset2.size(); i++) {
+        vector<double> dists(fset1.size());
+        std::transform(fset1.begin(), fset1.end(),dists.begin() , [&](feature f){
+            return descr_dist_sq(&f, &fset2[i]);
+        });
+        if(dists.size() == 0){
+            return DBL_MAX;
+        }else {
+            dist += *std::min_element(dists.begin(), dists.end());
+        }
+    }
+    return dist / (fset1.size() + fset2.size());
+}
+
+
+double PDM2(const vector<feature> fset1, const vector<feature> fset2) {
+    double dist = 0;
+    using namespace boost;
     for (int i = 0; i < fset1.size(); i++) {
         dist += *boost::range::min_element(
                 adaptors::transform(fset2, boost::function<double(feature)>([&fset1, &i](feature f2) {

@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "Experimento1_automoc.cpp"
   "OrdenacaoSift_automoc.cpp"
   "utilities_automoc.cpp"
+  "OpenMP_automoc.cpp"
   "CreateSceneSequence_automoc.cpp"
   "CMakeFiles/Experimento1.dir/Experimentos/Exp1/main.cpp.o"
   "CMakeFiles/Experimento1.dir/Experimento1_automoc.cpp.o"

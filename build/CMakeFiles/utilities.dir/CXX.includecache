@@ -65,7 +65,7 @@ boost/range/algorithm.hpp
 -
 boost/function.hpp
 -
-fstream
+algorithm
 -
 
 /opt/local/include/boost/assert.hpp

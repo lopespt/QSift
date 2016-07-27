@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "Experimento1_automoc.cpp"
   "OrdenacaoSift_automoc.cpp"
   "utilities_automoc.cpp"
+  "OpenMP_automoc.cpp"
   "CreateSceneSequence_automoc.cpp"
   "CMakeFiles/utilities.dir/src2/tools.cpp.o"
   "CMakeFiles/utilities.dir/src2/VideoSift.cpp.o"

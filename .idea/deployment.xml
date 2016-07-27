@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="Cluster" showNewOnTargetInSync="false">
+  <component name="PublishConfigData" serverName="Cluster" promptOnLocalOverwrite="false" showNewOnTargetInSync="false">
     <serverData>
       <paths name="Cluster">
         <serverdata>

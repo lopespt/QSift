@@ -1,9 +1,8 @@
 cmake_minimum_required(VERSION 3.2.2) # CMake version check
-#set(CMAKE_CXX_COMPILER g++-mp-6) # Enable c++11 standard
 project(simple_example )               # Create project "simple_example"
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O3") # Enable c++11 standard
-
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -O3") # Enable c++11 standard
+message(STATUS ${CMAKE_CXX_COMPILER})
 
 FIND_PACKAGE(OpenCV REQUIRED)
 FIND_PACKAGE(Boost REQUIRED)
@@ -53,7 +52,7 @@ target_link_libraries(Experimento2 sift utilities ${OpenCV_LIBRARIES})
 
 
 add_executable(CreateSceneSequence ${EXP_SRC}/CreateSceneSequences/main.cpp)
-target_link_libraries(CreateSceneSequence sift utilities ${OpenCV_LIBRARIES} ${OpenCL_LIBRARIES})
+target_link_libraries(CreateSceneSequence ${OpenCV_LIBRARIES} sift utilities  ${OpenCL_LIBRARIES})
 
 
 add_executable(TestPDM ${EXP_SRC}/TestPDM/main.cpp)
@@ -70,4 +69,7 @@ add_executable(OrdenacaoSift2 ${EXP_SRC}/OrdenacaoSift2/main.cpp)
 target_link_libraries(OrdenacaoSift2 sift utilities ${OpenCV_LIBRARIES} ${OpenCL_LIBRARIES} ${Matlab_LIBRARIES} ${Qt5Core_LIBRARIES} ${Qt5Concurrent_LIBRARIES})
 
 add_executable(Conversor ${EXP_SRC}/Conversor/main.cpp)
-target_link_libraries(Conversor ${OpenCV_LIBRARIES} ${OpenCL_LIBRARIES} ${Qt5Core_LIBRARIES} ${Qt5Concurrent_LIBRARIES})
+target_link_libraries(Conversor  ${OpenCV_LIBRARIES}  ${Qt5Core_LIBRARIES} ${Qt5Concurrent_LIBRARIES})
+
+add_executable(OpenMP ${EXP_SRC}/OpenMP/main.cpp)
+target_link_libraries(OpenMP ${OpenCV_LIBRARIES} ${OpenCL_LIBRARIES} ${Qt5Core_LIBRARIES} ${Qt5Concurrent_LIBRARIES})

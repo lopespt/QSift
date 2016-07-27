@@ -9,7 +9,7 @@ C_DEFINES =
 
 C_INCLUDES = -I/Users/wachs/Dropbox/SIFT/CPP/OpenSift/include -I/Users/wachs/Dropbox/SIFT/CPP/OpenSift/include2 -isystem /opt/local/include -F/Users/wachs/Qt/5.3/clang_64/lib -I/Users/wachs/Qt/5.3/clang_64/lib/QtCore.framework/Headers -I/Users/wachs/Qt/5.3/clang_64/mkspecs/macx-clang -I/Users/wachs/Qt/5.3/clang_64/lib/QtConcurrent.framework/Headers -isystem /opt/local/include/opencv 
 
-CXX_FLAGS =  -std=c++11 -O3  
+CXX_FLAGS =  -std=c++14 -O3  
 
 CXX_DEFINES = 
 

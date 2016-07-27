@@ -23,31 +23,11 @@ Mat VideoSift::readFrame(int frameNum){
         capture.read(m);
         x.unlock();
     }else {
+        //puts( (basename + std::to_string(frameNum) + ".png\n").c_str());
         string r = basename + std::to_string(frameNum) + ".png";
         m = imread(r);
     }
     return m;
-}
-
-vector<feature> VideoSift::extractSiftFeatures(int frameNum, int maxPoints) {
-    Mat m = readFrame(frameNum);
-    resize(m, m, Size(), 0.25, 0.25);
-    //putText(actualFrame, String("Frame ") + to_string(frameNum), cv::Point2i(10,50), cv::HersheyFonts::FONT_HERSHEY_DUPLEX, 2, Scalar(0,0,255,0));
-    //imshow(String("actual") + to_string(frameNum), this->actualFrame);
-    //waitKey(0);
-    //printf("opa\n");
-
-    feature *ptr;
-    unique_ptr<IplImage> img(new IplImage(m));
-
-    int n = sift_features(img.get(), &ptr);
-    if (maxPoints > 0) {
-        n = MIN(maxPoints, n);
-    }
-    vector<feature> ret(ptr, ptr + n);
-    free(ptr);
-
-    return ret;
 }
 
 unsigned int VideoSift::totalFrames() const {
@@ -87,7 +67,26 @@ vector<feature> VideoSift::extractQSiftFeatures(int frameNum, int maxPoints, dou
     return ret;
 }
 
+vector<feature> VideoSift::extractSiftFeatures(int frameNum, int maxPoints) {
+    Mat m = readFrame(frameNum);
+    resize(m, m, Size(), 0.25, 0.25);
+    //putText(actualFrame, String("Frame ") + to_string(frameNum), cv::Point2i(10,50), cv::HersheyFonts::FONT_HERSHEY_DUPLEX, 2, Scalar(0,0,255,0));
+    //imshow(String("actual") + to_string(frameNum), this->actualFrame);
+    //waitKey(0);
+    //printf("opa\n");
+
+    feature *ptr;
+    unique_ptr<IplImage> img(new IplImage(m));
+
+    int n = sift_features(img.get(), &ptr);
+    if (maxPoints > 0) {
+        n = MIN(maxPoints, n);
+    }
+    vector<feature> ret(ptr, ptr + n);
+    free(ptr);
 
 
+    return ret;
+}
 
 

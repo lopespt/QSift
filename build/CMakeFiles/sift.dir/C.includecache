@@ -105,15 +105,11 @@ limits.h
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/src/sift.c
 sift.h
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/src/sift.h
-math.h
--
 imgfeatures.h
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/src/imgfeatures.h
 utils.h
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/src/utils.h
 cv.h
--
-opencv2/core/types_c.h
 -
 
 /Users/wachs/Dropbox/SIFT/CPP/OpenSift/src/siftfeat.c

@@ -159,7 +159,7 @@ IplImage*** build_gauss_pyr( IplImage* base, int octvs,
 void release_pyr( IplImage**** pyr, int octvs, int n );
 IplImage* create_init_img( IplImage* img, int img_dbl, double sigma );
 CvMat *createGaussianKernel(double desv);
-CvMat *createQGaussianKernel(double q, double b);
+CvMat *createQGaussianKernel(double q, double b, double sd);
 void printMat(CvMat *mat);
 double Gaussian(double x, double desv);
 double qGaussian(double x, double q, double b);

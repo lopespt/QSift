@@ -18,21 +18,20 @@
 */
 
 #include "sift.h"
-#include <math.h>
+
 #define cvRound2(x) ((int)round(x))
 
 #include "imgfeatures.h"
 #include "utils.h"
 
 #include <cv.h>
-#include <opencv2/core/types_c.h>
 
 #define cvFloor(x) ((int)x );
 
 /************************* Local Function Prototypes *************************/
 
-int cvRound(double i){
-    return (int)(i+0.5);
+int cvRound(double i) {
+    return (int) (i + 0.5);
 }
 
 //static IplImage* create_init_img( IplImage*, int, double );
@@ -263,6 +262,26 @@ static IplImage *convert_to_gray32(IplImage *img) {
 }
 
 
+double qGaussian2D(double x, double y, double q, double b, double sd) {
+    assert(q < 2);
+    double cq;
+    double eq;
+
+
+    double domain = sqrt((x * x + y * y) / (sd * sd));
+    char cond = 0 <= domain && domain < 1. / sqrt(b * (1.0 - q));
+
+    if ((q > 1 && q < 2) || (q < 1 && cond == 1)) {
+        double baseEq = 1 + ((1 - q) * ((-b) * (x * x + y * y) / (sd * sd)));
+        double nFactor = b * (2.0 - q) / (M_PI * sd * sd);
+        eq = pow(baseEq, 1. / (1. - q));
+        eq = nFactor * eq;
+    } else {
+        eq = 0;
+    }
+    return eq;
+}
+
 double qGaussian(double x, double q, double b) {
     assert(q < 3);
     double cq;
@@ -303,14 +322,31 @@ CvMat *createGaussianKernel(double desv) {
     return ret;
 }
 
-CvMat *createQGaussianKernel(double q, double b) {
-    const int size = 5;
+CvMat *normalizeMat(CvMat *input, CvMat *output) {
+    CvSize sz = cvGetSize(input);
+    int size = sz.height;
+    double ss = 0;
+    for (int i = 0; i < size; i++)
+        for (int j = 0; j < size; j++)
+            ss += input->data.fl[size * i + j];
+
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            //cvSet2D(ret, i, j, cvScalarAll(cvGet2D(ret, i, j).val[0] / ss));
+            output->data.fl[size * i + j] = (float) (input->data.fl[size * i + j] / ss);
+        }
+    }
+    return output;
+}
+
+CvMat *createQGaussianKernel_old(double q, double b) {
+    const int size = 7;
     CvMat *ret = cvCreateMat(size, size, CV_32FC1);
 
     double ss = 0;
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++) {
-            double value =
+            double value = //qGaussian(i - (size / 2), q, b) + qGaussian(j - (size / 2), q, b);
                     pow(qGaussian(i - (size / 2), q, b), 1.0 - q) + pow(qGaussian(j - (size / 2), q, b), 1 - q) - 1.0;
             if (value > 0) {
                 value = pow(value, 1. / (1. - q));
@@ -319,13 +355,35 @@ CvMat *createQGaussianKernel(double q, double b) {
             }
             ss += value;
             //cvSet2D(ret, i, j, cvScalarAll(value));
-            ret->data.fl[ size*i + j]= (float) value;
+            ret->data.fl[size * i + j] = (float) value;
         }
     }
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++) {
             //cvSet2D(ret, i, j, cvScalarAll(cvGet2D(ret, i, j).val[0] / ss));
-            ret->data.fl[ size*i + j] = (float) (cvGet2D(ret, i, j).val[0] / ss);
+            ret->data.fl[size * i + j] = (float) (cvGet2D(ret, i, j).val[0] / ss);
+        }
+    }
+
+    return ret;
+}
+
+CvMat *createQGaussianKernel(double q, double b, double sd) {
+    const int size = 7;
+    CvMat *ret = cvCreateMat(size, size, CV_32FC1);
+
+    double ss = 0;
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            double value = qGaussian2D(i - (size / 2), j - (size / 2), q, b, sd);
+            ss += value;
+            ret->data.fl[size * i + j] = (float) value;
+        }
+    }
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) {
+            //cvSet2D(ret, i, j, cvScalarAll(cvGet2D(ret, i, j).val[0] / ss));
+            ret->data.fl[size * i + j] = (float) (cvGet2D(ret, i, j).val[0] / ss);
         }
     }
 
@@ -378,8 +436,9 @@ static */ IplImage ***build_gauss_pyr(IplImage *base, int octvs,
     k = pow(2.0, 1.0 / intvls);
     sig[0] = sigma;
     sig[1] = sigma * sqrt(k * k - 1);
-    for (i = 2; i < intvls + 3; i++)
+    for (i = 2; i < intvls + 3; i++) {
         sig[i] = sig[i - 1] * k;
+    }
 
 
     for (o = 0; o < octvs; o++)
@@ -399,13 +458,16 @@ static */ IplImage ***build_gauss_pyr(IplImage *base, int octvs,
                 //     CV_GAUSSIAN, 0, 0, sig[i], sig[i] );
 
                 CvMat *m;
-                if (useQGaussian) {
-                    m = createQGaussianKernel(*qs, *b);
-                    cvPow(m, m, i);
+                if (useQGaussian && qs && *qs != 1) {
+                    m = createQGaussianKernel(*qs, *b, sig[i]);
+                    cvPow(m, m, 1. / i);
+                    normalizeMat(m, m);
+                    //printMat(m);
+                    //getchar();
                 } else
                     m = createGaussianKernel(sig[i]);
 
-                cvFilter2D(gauss_pyr[o][i - 1], gauss_pyr[o][i], m, cvPoint(2, 2));
+                cvFilter2D(gauss_pyr[o][i - 1], gauss_pyr[o][i], m, cvPoint(3, 3));
                 cvReleaseMat(&m);
             }
         }
