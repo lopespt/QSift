@@ -114,13 +114,14 @@ float avalia(vector<FrameInfo> result) {
 
 float avalia2(vector<FrameInfo> result) {
     float res = 0;
-    if(result[0].features.size() == 0)
+    if(result[0].features.size() == 0 || result.size() == 0)
         return 0;
 
     for (int i = 2; i < result.size() && result[i-1].features.size()>0 && result[i].features.size()>0; i++) {
         res +=  result[i - 1].frame_num < result[i].frame_num ? 1 : -1;
     }
     return res;
+    // return (res + float(result.size() - 1)) / (2.0 * float(result.size()) - 2.0);
 }
 
 vector<FrameInfo> createVectorSpace2(const char *source, int sFrame, int eFrame, int step, float *q = NULL, float *b = NULL) {
@@ -320,18 +321,20 @@ float countZeroFeatures(const vector<FrameInfo> &ordered){
 }
 
 int main(int argc, char *argv[]) {
-
+    // printf("Start\n");
     QCoreApplication app(argc, argv);
 
     QCommandLineParser parser;
     parser.addHelpOption();
     parser.addPositionalArgument("folder", "Images Folder");
     parser.addPositionalArgument("q", "q Parameter (0 <= q < 3)");
-    parser.addPositionalArgument("b", "q Parameter (b > 0)");
+    parser.addPositionalArgument("b", "b Parameter (b > 0)");
     parser.addOption(QCommandLineOption(QStringList{"from","f"},"Starts at frame f", "from"));
     parser.addOption(QCommandLineOption(QStringList{"to","t"},"Ends at frame t","to"));
     parser.addOption(QCommandLineOption(QStringList{"step","s"},"Frame steps","step"));
     parser.process(app);
+    
+    // printf("Checkpoint %d\n", 1);
 
     float q = parser.positionalArguments().value(1).toFloat();
     float b = parser.positionalArguments().value(2).toFloat();
@@ -339,6 +342,8 @@ int main(int argc, char *argv[]) {
     QString basename;
     tie(from, to, basename) = discoverFramesInFolder(parser.positionalArguments().value(0));
     basename = parser.positionalArguments().value(0) + basename;
+    
+    // printf("Checkpoint %d\n", 2);
 
     if(parser.isSet("from"))
         from = parser.value("from").toInt();
@@ -346,34 +351,50 @@ int main(int argc, char *argv[]) {
         to = parser.value("to").toInt();
     if(parser.isSet("step"))
         step = parser.value("step").toInt();
+    
+    // printf("Checkpoint %d\n", 3);
 
-    //printf("%d %d\n",from, to);
+    // printf("%d %d %d\n",from, to, step);
 
     //printf("%f\n", q);
     if(q==1){
+    
+        // printf("Checkpoint %.1f\n", 4.1);
 
         //vector<FrameInfo> captured = createVectorSpace(basename.toStdString().c_str(), from, to, step);
         vector<FrameInfo> captured = createVectorSpace(basename.toStdString().c_str(), from, to, step);
         vector<FrameInfo> ordered = ordena(captured);
         float aval2 = avalia2(ordered);
         //printf("%d\t%.2f\t%.0f\n", step, countZeroFeatures(ordered), aval2);
-        printf("%.2f\t%.2f\t%d\t%.2f\t%.0f\n", 1.0, -1., step, countZeroFeatures(ordered), aval2);
+        printf("%.2f\t%.2f\t%d\t%.2f\t%.4f\n", 1.0, -1., step, countZeroFeatures(ordered), aval2);
 
         for (FrameInfo f : captured) {
             f.freeMemory();
         }
     }else {
+    
+        // printf("Checkpoint %.1f\n", 4.2);
+
         vector<FrameInfo> captured = createVectorSpace(basename.toStdString().c_str(), from, to, step, &q, &b);
+        // printf("Checkpoint %.2f\n", 4.21);
         vector<FrameInfo> ordered = ordena(captured);
+        // printf("Checkpoint %.2f\n", 4.22);
         float aval2 = avalia2(ordered);
+        // printf("Checkpoint %.2f\n", 4.23);
 
-        printf("%.2f\t%.2f\t%d\t%.2f\t%.0f\n", q, b, step, countZeroFeatures(ordered), aval2);
+        printf("%.2f\t%.2f\t%d\t%.2f\t%.4f\n", q, b, step, countZeroFeatures(ordered), aval2);
 
+        // printf("Checkpoint %.2f\n", 4.24);
         for (FrameInfo f : captured) {
             f.freeMemory();
         }
+        // printf("Checkpoint %.2f\n", 4.25);
     }
+    
+    // printf("Checkpoint %d\n", 5);
     fflush(stdout);
+    
+    // printf("Checkpoint %d\n", 6);
 
     return 0;
 }

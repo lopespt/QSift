@@ -39,6 +39,49 @@ double PDM(const vector<feature> fset1, const vector<feature> fset2) {
     return dist / (fset1.size() + fset2.size());
 }
 
+FrameMatch PDM_Matches(vector<feature> fset1, vector<feature> fset2){
+    double dist = 0;
+    vector<feature> fret1(fset1.size()), fret2(fset2.size());
+
+    for (int i = 0; i < fset1.size(); i++) {
+        vector<double> dists(fset2.size());
+        std::transform(fset2.begin(), fset2.end(),dists.begin() , [&](feature f){
+            return descr_dist_sq(&f, &fset1[i]);
+        });
+        if(dists.size() == 0) {
+            return FrameMatch(DBL_MAX, vector<feature>(0), vector<feature>(0));
+        }else{
+            int min_index = 0;
+            for(int j = 1; j < dists.size(); j++){
+                if(dists[j] < dists[min_index]){
+                    min_index = j;
+                }
+            }
+            fret1[i] = fset1[min_index];
+            dist += dists[min_index];
+        }
+    }
+    for (int i = 0; i < fset2.size(); i++) {
+        vector<double> dists(fset1.size());
+        std::transform(fset1.begin(), fset1.end(),dists.begin() , [&](feature f){
+            return descr_dist_sq(&f, &fset2[i]);
+        });
+        if(dists.size() == 0){
+            return FrameMatch(DBL_MAX, vector<feature>(0), vector<feature>(0));
+        }else {
+            int min_index = 0;
+            for(int j = 1; j < dists.size(); j++){
+                if(dists[j] < dists[min_index]){
+                    min_index = j;
+                }
+            }
+            fret2[i] = fset2[min_index];
+            dist += dists[min_index];
+        }
+    }
+
+    return FrameMatch(dist, fret1, fret2);
+};
 
 double PDM2(const vector<feature> fset1, const vector<feature> fset2) {
     double dist = 0;

@@ -73,3 +73,6 @@ target_link_libraries(Conversor  ${OpenCV_LIBRARIES}  ${Qt5Core_LIBRARIES} ${Qt5
 
 add_executable(OpenMP ${EXP_SRC}/OpenMP/main.cpp)
 target_link_libraries(OpenMP ${OpenCV_LIBRARIES} ${OpenCL_LIBRARIES} ${Qt5Core_LIBRARIES} ${Qt5Concurrent_LIBRARIES})
+
+add_executable(FrameMatching ${EXP_SRC}/FrameMatching/main.cpp)
+target_link_libraries(FrameMatching sift utilities ${OpenCV_LIBRARIES} ${OpenCL_LIBRARIES} ${Matlab_LIBRARIES} ${Qt5Core_LIBRARIES} ${Qt5Concurrent_LIBRARIES})

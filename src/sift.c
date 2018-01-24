@@ -924,6 +924,8 @@ static void adjust_for_img_dbl(CvSeq *features) {
     n = features->total;
     for (i = 0; i < n; i++) {
         feat = CV_GET_SEQ_ELEM(struct feature, features, i);
+//        feat->x *= 2.0;
+//        feat->y *= 2.0;
         feat->x /= 2.0;
         feat->y /= 2.0;
         feat->scl /= 2.0;

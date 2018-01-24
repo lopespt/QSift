@@ -29,9 +29,9 @@ private:
     int from;
     int to;
     string basename;
-    Mat readFrame(int);
 
 public:
+    Mat readFrame(int);
     VideoSift(string path);
     VideoSift(string basename,int from, int to);
     vector<feature> extractSiftFeatures(int frameNum, int maxPoints=-1);

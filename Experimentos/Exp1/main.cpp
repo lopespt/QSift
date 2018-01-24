@@ -22,8 +22,8 @@ IplImage *resizeIpl(IplImage *img, float factor){
 int main(int argc, char *argv[]) {
 
     //IplImage *img = cvLoadImage("/Users/wachs/SUN/Images/a/abbey/sun_aaalbzqrimafwbiv.jpg", CV_LOAD_IMAGE_COLOR);
-    IplImage *orig = cvLoadImage("/Users/wachs/Dropbox/SIFT/CPP/OpenSift/sbc1.png", CV_LOAD_IMAGE_COLOR);
-    IplImage *orig2 = cvLoadImage("/Users/wachs/Dropbox/SIFT/CPP/OpenSift/sbc2.png", CV_LOAD_IMAGE_COLOR);
+    IplImage *orig = cvLoadImage("/home/miller/Desktop/OneDrive - DePaul University/qSIFT/CPP/OpenSift/sbc1.png", CV_LOAD_IMAGE_COLOR);
+    IplImage *orig2 = cvLoadImage("/home/miller/Desktop/OneDrive - DePaul University/qSIFT/CPP/OpenSift/sbc2.png", CV_LOAD_IMAGE_COLOR);
 
     IplImage *img=resizeIpl(orig, 0.25);
     IplImage *img2=resizeIpl(orig2, 0.25);

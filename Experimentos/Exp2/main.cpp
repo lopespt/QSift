@@ -12,7 +12,7 @@
 #include <VideoSift.hpp>
 #include <imgfeatures.h>
 
-#define VIDEO_SRC "/Users/wachs/Dropbox/SIFT/Videos/MundoVisto-de-Cima/ScreenCaptureProject108.mp4"
+#define VIDEO_SRC "/home/miller/Desktop/OneDrive - DePaul University/qSIFT/Videos/MundoVisto-de-Cima/ScreenCaptureProject108.mp4"
 
 IplImage *resizeIpl(IplImage *img, float factor){
     CvSize s = cvGetSize(img);
@@ -43,7 +43,7 @@ int main(int argc, char *argv[]) {
     for(auto k : dists){
         printf("%.2f\n", k);
     }
-    waitKey(0);
+    //waitKey(0);
 }
 
 int main2(int argc, char *argv[]) {

@@ -5,6 +5,7 @@
 
 #include <tools.hpp>
 #include <iostream>
+#include <memory>
 
 namespace Color {
     enum class Code : int {
@@ -60,7 +61,7 @@ int main(int argc, char *argv[]) {
 
     auto lambda = [](Teste *i) {
         cout << "deleting\n";
-        std::default_delete<Teste>()(i);
+        // std::default_delete<Teste>()(i);
     };
 
     auto k = shared_ptr<Teste>(new Teste{5},lambda);

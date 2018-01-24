@@ -57,6 +57,13 @@ vector<feature> VideoSift::extractQSiftFeatures(int frameNum, int maxPoints, dou
     feature *ptr;
     unique_ptr<IplImage> img(new IplImage(m));
     int n = qsift_features(img.get(), &ptr, &q, &b);
+
+//    // Checking if the features are sorted
+//    for(int i = 0; i < n; i++){
+//        printf("%d: %lf\n", i, ptr[i].scl);
+//    }
+//    exit(0);
+
     if (maxPoints > 0) {
         n = MIN(maxPoints, n);
     }
