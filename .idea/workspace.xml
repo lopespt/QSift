@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="false">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ce495b14-17df-4699-adc9-2ba6bcdc7e9f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CPP/SURF/run_experiments.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/SURF/Experimentos/TestSurf/main.cpp" afterPath="$PROJECT_DIR$/CPP/SURF/Experimentos/TestSurf/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/OrdenacaoSift/main.cpp" afterPath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/OrdenacaoSift/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/OrdenacaoSift2/main.cpp" afterPath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/OrdenacaoSift2/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Plot/plot_graphs-cumulative_regression_by_category.py" afterPath="$PROJECT_DIR$/Python/Plot/plot_graphs-cumulative_regression_by_category.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Plot/plot_graphs-std_of_mean.py" afterPath="$PROJECT_DIR$/Python/Plot/plot_graphs-std_of_mean.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Plot/plot_graphs-last_comparison.py" afterPath="$PROJECT_DIR$/Python/Plot/plot_graphs-last_comparison.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Plot/plot_graphs-best_regression.py" afterPath="$PROJECT_DIR$/Python/Plot/plot_graphs-best_regression.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/SURF/Experimentos/OrdenacaoSurf/main.cpp" afterPath="$PROJECT_DIR$/CPP/SURF/Experimentos/OrdenacaoSurf/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/copy_scenes.py" afterPath="$PROJECT_DIR$/Python/copy_scenes.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/extract_frames.py" afterPath="$PROJECT_DIR$/Python/extract_frames.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Plot/plot_graphs-nssf_boxplot_mean2.py" afterPath="$PROJECT_DIR$/Python/Plot/plot_graphs-nssf_boxplot_mean2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Plot/statistical_analyses.py" afterPath="$PROJECT_DIR$/Python/Plot/statistical_analyses.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/CreateSceneSequences/main.cpp" afterPath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/CreateSceneSequences/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/GaussianTest/main.cpp" afterPath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/GaussianTest/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/SURF/Experimentos/TestSurf2/main.cpp" afterPath="$PROJECT_DIR$/CPP/SURF/Experimentos/TestSurf2/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/OpenSift/include2/VideoSift.hpp" afterPath="$PROJECT_DIR$/CPP/OpenSift/include2/VideoSift.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/Exp2/main.cpp" afterPath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/Exp2/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Plot/plot_graphs-mean_of_std.py" afterPath="$PROJECT_DIR$/Python/Plot/plot_graphs-mean_of_std.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Plot/plot_graphs-mean_regression.py" afterPath="$PROJECT_DIR$/Python/Plot/plot_graphs-mean_regression.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/FrameMatching/main.cpp" afterPath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/FrameMatching/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/OpenSift/src2/VideoSift.cpp" afterPath="$PROJECT_DIR$/CPP/OpenSift/src2/VideoSift.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/generate_tables_data.py" afterPath="$PROJECT_DIR$/Python/generate_tables_data.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/SURF/src/VideoSurf.cpp" afterPath="$PROJECT_DIR$/CPP/SURF/src/VideoSurf.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/OpenSift/include/sift.h" afterPath="$PROJECT_DIR$/CPP/OpenSift/include/sift.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/TestPDM/main.cpp" afterPath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/TestPDM/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Plot/plot_graphs-heatmaps.py" afterPath="$PROJECT_DIR$/Python/Plot/plot_graphs-heatmaps.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/run_experiments.py" afterPath="$PROJECT_DIR$/CPP/run_experiments.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/best_q_matrix.py" afterPath="$PROJECT_DIR$/Python/best_q_matrix.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Plot/plot_graphs-nssf_boxplot_best.py" afterPath="$PROJECT_DIR$/Python/Plot/plot_graphs-nssf_boxplot_best.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/OpenMP/main.cpp" afterPath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/OpenMP/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/OpenSift/src/sift.c" afterPath="$PROJECT_DIR$/CPP/OpenSift/src/sift.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Plot/plot_graphs-worst_regression.py" afterPath="$PROJECT_DIR$/Python/Plot/plot_graphs-worst_regression.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/Exp1/main.cpp" afterPath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/Exp1/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/OpenSift/include2/tools.hpp" afterPath="$PROJECT_DIR$/CPP/OpenSift/include2/tools.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Plot/plot_graphs-nssf_boxplot_mean.py" afterPath="$PROJECT_DIR$/Python/Plot/plot_graphs-nssf_boxplot_mean.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Plot/plot_graphs-nssf_boxplot.py" afterPath="$PROJECT_DIR$/Python/Plot/plot_graphs-nssf_boxplot.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/Conversor/main.cpp" afterPath="$PROJECT_DIR$/CPP/OpenSift/Experimentos/Conversor/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/Plot/plot_graphs-std.py" afterPath="$PROJECT_DIR$/Python/Plot/plot_graphs-std.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python/extract_frames2.py" afterPath="$PROJECT_DIR$/Python/extract_frames2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/SURF/include/VideoSurf.hpp" afterPath="$PROJECT_DIR$/CPP/SURF/include/VideoSurf.hpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CPP/OpenSift/src2/tools.cpp" afterPath="$PROJECT_DIR$/CPP/OpenSift/src2/tools.cpp" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="best_q_matrix.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Python/best_q_matrix.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sift.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CPP/OpenSift/include/sift.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="26" column="58" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CPP/OpenSift/Experimentos/Conversor/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CPP/SURF/Experimentos/OrdenacaoSurf/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CPP/SURF/Experimentos/TestSurf/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CPP/SURF/Experimentos/TestSurf2/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VideoSurf.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CPP/SURF/include/VideoSurf.hpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VideoSurf.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CPP/SURF/src/VideoSurf.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="59" lean-forward="false" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>sign</find>
+      <find>sign_in</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Python/copy_scenes.py" />
+        <option value="$PROJECT_DIR$/Python/extract_frames.py" />
+        <option value="$PROJECT_DIR$/Python/extract_frames2.py" />
+        <option value="$PROJECT_DIR$/Python/generate_tables_data.py" />
+        <option value="$PROJECT_DIR$/Python/Plot/plot_graphs-best_regression.py" />
+        <option value="$PROJECT_DIR$/Python/Plot/plot_graphs-cumulative_regression_by_category.py" />
+        <option value="$PROJECT_DIR$/Python/Plot/plot_graphs-heatmaps.py" />
+        <option value="$PROJECT_DIR$/Python/Plot/plot_graphs-last_comparison.py" />
+        <option value="$PROJECT_DIR$/Python/Plot/plot_graphs-mean_of_std.py" />
+        <option value="$PROJECT_DIR$/Python/Plot/plot_graphs-mean_regression.py" />
+        <option value="$PROJECT_DIR$/Python/Plot/plot_graphs-nssf_boxplot.py" />
+        <option value="$PROJECT_DIR$/Python/Plot/plot_graphs-nssf_boxplot_mean.py" />
+        <option value="$PROJECT_DIR$/Python/Plot/plot_graphs-nssf_boxplot_best.py" />
+        <option value="$PROJECT_DIR$/Python/Plot/plot_graphs-nssf_boxplot_mean2.py" />
+        <option value="$PROJECT_DIR$/Python/Plot/plot_graphs-std.py" />
+        <option value="$PROJECT_DIR$/Python/Plot/plot_graphs-std_of_mean.py" />
+        <option value="$PROJECT_DIR$/Python/Plot/plot_graphs-worst_regression.py" />
+        <option value="$PROJECT_DIR$/Python/Plot/statistical_analyses.py" />
+        <option value="$PROJECT_DIR$/CPP/run_experiments.py" />
+        <option value="$PROJECT_DIR$/CPP/OpenSift/Experimentos/OrdenacaoSift2/main.cpp" />
+        <option value="$PROJECT_DIR$/CPP/OpenSift/Experimentos/Conversor/main.cpp" />
+        <option value="$PROJECT_DIR$/CPP/OpenSift/Experimentos/CreateSceneSequences/main.cpp" />
+        <option value="$PROJECT_DIR$/CPP/OpenSift/Experimentos/Exp1/main.cpp" />
+        <option value="$PROJECT_DIR$/CPP/OpenSift/Experimentos/Exp2/main.cpp" />
+        <option value="$PROJECT_DIR$/CPP/OpenSift/Experimentos/FrameMatching/main.cpp" />
+        <option value="$PROJECT_DIR$/CPP/OpenSift/Experimentos/GaussianTest/main.cpp" />
+        <option value="$PROJECT_DIR$/CPP/OpenSift/Experimentos/OpenMP/main.cpp" />
+        <option value="$PROJECT_DIR$/CPP/OpenSift/Experimentos/OrdenacaoSift/main.cpp" />
+        <option value="$PROJECT_DIR$/CPP/OpenSift/Experimentos/TestPDM/main.cpp" />
+        <option value="$PROJECT_DIR$/CPP/OpenSift/include/sift.h" />
+        <option value="$PROJECT_DIR$/CPP/OpenSift/src/sift.c" />
+        <option value="$PROJECT_DIR$/CPP/OpenSift/include2/tools.hpp" />
+        <option value="$PROJECT_DIR$/CPP/OpenSift/include2/VideoSift.hpp" />
+        <option value="$PROJECT_DIR$/CPP/OpenSift/src2/tools.cpp" />
+        <option value="$PROJECT_DIR$/CPP/OpenSift/src2/VideoSift.cpp" />
+        <option value="$PROJECT_DIR$/CPP/SURF/Experimentos/OrdenacaoSurf/main.cpp" />
+        <option value="$PROJECT_DIR$/CPP/SURF/Experimentos/TestSurf/main.cpp" />
+        <option value="$PROJECT_DIR$/CPP/SURF/Experimentos/TestSurf2/main.cpp" />
+        <option value="$PROJECT_DIR$/CPP/SURF/include/VideoSurf.hpp" />
+        <option value="$PROJECT_DIR$/CPP/SURF/src/VideoSurf.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="952" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="QSift" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="QSift" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings sdk-home="C:\Users\mille\Anaconda2\python.exe">
+        <option name="mySdkHome" value="C:\Users\mille\Anaconda2\python.exe" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce495b14-17df-4699-adc9-2ba6bcdc7e9f" name="Default" comment="" />
+      <created>1516982673781</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1516982673781</updated>
+      <workItem from="1516983775748" duration="1453000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1453000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Python/best_q_matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/run_experiments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="74" />
+          <folding>
+            <element signature="e#629#639#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/generate_tables_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/extract_frames.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/copy_scenes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/extract_frames2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Plot/plot_graphs-best_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Plot/plot_graphs-cumulative_regression_by_category.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Plot/plot_graphs-heatmaps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Plot/plot_graphs-last_comparison.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Plot/plot_graphs-mean_of_std.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Plot/plot_graphs-mean_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="329" column="12" lean-forward="false" selection-start-line="329" selection-start-column="5" selection-end-line="329" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Plot/plot_graphs-nssf_boxplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="225" column="12" lean-forward="false" selection-start-line="225" selection-start-column="5" selection-end-line="225" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Plot/plot_graphs-nssf_boxplot_mean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="241" column="12" lean-forward="false" selection-start-line="241" selection-start-column="5" selection-end-line="241" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Plot/plot_graphs-nssf_boxplot_best.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="247" column="12" lean-forward="false" selection-start-line="247" selection-start-column="5" selection-end-line="247" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Plot/plot_graphs-nssf_boxplot_mean2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="241" column="12" lean-forward="false" selection-start-line="241" selection-start-column="5" selection-end-line="241" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Plot/plot_graphs-std.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6489">
+          <caret line="309" column="12" lean-forward="false" selection-start-line="309" selection-start-column="5" selection-end-line="309" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Plot/statistical_analyses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="508" column="12" lean-forward="false" selection-start-line="508" selection-start-column="5" selection-end-line="508" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Plot/plot_graphs-worst_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="353" column="12" lean-forward="false" selection-start-line="353" selection-start-column="5" selection-end-line="353" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/Plot/plot_graphs-std_of_mean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="289" column="12" lean-forward="false" selection-start-line="289" selection-start-column="5" selection-end-line="289" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/SURF/run_experiments.py" />
+    <entry file="file://$PROJECT_DIR$/CPP/run_experiments.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="73" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="73" />
+          <folding>
+            <element signature="e#629#639#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/Experimentos/OrdenacaoSift2/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/Experimentos/CreateSceneSequences/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="75" lean-forward="false" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/Experimentos/Exp1/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="75" lean-forward="false" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/Experimentos/Exp2/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="75" lean-forward="false" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/Experimentos/FrameMatching/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/Experimentos/GaussianTest/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="75" lean-forward="false" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/Experimentos/OpenMP/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/Experimentos/OrdenacaoSift/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="75" lean-forward="false" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/Experimentos/TestPDM/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="75" lean-forward="false" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/include/imgfeatures.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/include/kdtree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1875">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/include/utils.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5088">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/include/xform.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3366">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/src/sift.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3528">
+          <caret line="168" column="4" lean-forward="false" selection-start-line="168" selection-start-column="4" selection-end-line="168" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python/best_q_matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/src/siftfeat.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/include2/cl.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11025">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/src2/pdm_opencl.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/include2/tools.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/include2/VideoSift.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/src2/tools.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/src2/VideoSift.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/SURF/Experimentos/OrdenacaoSurf/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/SURF/Experimentos/TestSurf/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/SURF/Experimentos/TestSurf2/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/SURF/include/VideoSurf.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/SURF/src/VideoSurf.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="59" lean-forward="false" selection-start-line="6" selection-start-column="59" selection-end-line="6" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/Experimentos/Conversor/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CPP/OpenSift/include/sift.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="26" column="58" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

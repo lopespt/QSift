@@ -1,3 +1,18 @@
+# ------------------------------------------------------------------------
+# Project: q-SIFT
+# Authors:  Guilherme Wachs-Lopes <gwachs@fei.edu.br>
+#           Miller Horvath <mhorvath@fei.edu.br>
+#
+# This is an open source code created for research and academic purposes.
+# If you have used this code in you research, please cite:
+#
+#   P. S. Rodrigues, G. A. Wachs-Lopes, G. Antonio Giraldi and M. Horvath,
+#   in press. q-SIFT: A Strategy Based on Non-Extensive Statistic to
+#   Improve SIFT Algorithm Under Severe Conditions. Pattern Recognition.
+#
+# ------------------------------------------------------------------------
+
+
 from plotly.graph_objs import *
 import plotly.graph_objs as go
 import plotly.plotly as py
@@ -5,8 +20,8 @@ import cPickle as cpkl
 import os
 import numpy as np
 
-py.sign_in(username='miller.horvath',
-           api_key='F1vaWxL8j2CFqLpJNmCQ')
+# # You must sign in into plotly.com
+# py.sign_in('username', 'api_key')
 
 r_folder = ['NYC',
             'Italy_f4382_t5280',

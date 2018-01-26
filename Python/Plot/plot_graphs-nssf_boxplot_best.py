@@ -1,3 +1,18 @@
+# ------------------------------------------------------------------------
+# Project: q-SIFT
+# Authors:  Guilherme Wachs-Lopes <gwachs@fei.edu.br>
+#           Miller Horvath <mhorvath@fei.edu.br>
+#
+# This is an open source code created for research and academic purposes.
+# If you have used this code in you research, please cite:
+#
+#   P. S. Rodrigues, G. A. Wachs-Lopes, G. Antonio Giraldi and M. Horvath,
+#   in press. q-SIFT: A Strategy Based on Non-Extensive Statistic to
+#   Improve SIFT Algorithm Under Severe Conditions. Pattern Recognition.
+#
+# ------------------------------------------------------------------------
+
+
 import plotly.plotly as py
 from plotly.graph_objs import *
 import plotly.graph_objs as go
@@ -229,20 +244,18 @@ layout = {
 data = Data([qsift_sub_trace])
 fig = go.Figure(data=data, layout=layout)
 
-py.sign_in(username='miller.horvath',
-           api_key='F1vaWxL8j2CFqLpJNmCQ')
+# # You must sign in into plotly.com
+# py.sign_in('username', 'api_key')
 py.plot(fig, filename=f_name+'_qsift_sub')
 
 data = Data([qsift_sup_trace])
 fig = go.Figure(data=data, layout=layout)
 
-py.sign_in(username='miller.horvath',
-           api_key='F1vaWxL8j2CFqLpJNmCQ')
+
 py.plot(fig, filename=f_name+'_qsift_sup')
 
 data = Data([surf_trace])
 fig = go.Figure(data=data, layout=layout)
 
-py.sign_in(username='miller.horvath',
-           api_key='F1vaWxL8j2CFqLpJNmCQ')
+
 py.plot(fig, filename=f_name+'_surf')

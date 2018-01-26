@@ -1,6 +1,17 @@
+// ------------------------------------------------------------------------
+// Project: q-SIFT
+// Authors:  Guilherme Wachs-Lopes <gwachs@fei.edu.br>
+//           Miller Horvath <mhorvath@fei.edu.br>
 //
-// Created by mille on 21/09/2017.
+// This is an open source code created for research and academic purposes.
+// If you have used this code in you research, please cite:
 //
+//   P. S. Rodrigues, G. A. Wachs-Lopes, G. Antonio Giraldi and M. Horvath,
+//   in press. q-SIFT: A Strategy Based on Non-Extensive Statistic to
+//   Improve SIFT Algorithm Under Severe Conditions. Pattern Recognition.
+//
+// ------------------------------------------------------------------------
+
 
 #ifndef CPP_VIDEOSURF_H
 #define CPP_VIDEOSURF_H
