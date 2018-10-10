@@ -17,11 +17,14 @@
 #include <tools.hpp>
 
 
-#define VIDEO_SRC "/Users/wachs/Dropbox/SIFT/Videos/MundoVisto-de-Cima/ScreenCaptureProject108.mp4"
+//#define VIDEO_SRC "/Users/wachs/Dropbox/SIFT/Videos/MundoVisto-de-Cima/ScreenCaptureProject108.mp4"
+
 #define CutThreshold 200000
 
+
 int main(int argc, char *argv[]) {
-    VideoSift video(VIDEO_SRC);
+    
+    VideoSift video(argv[1]);
 
     FILE *out = fopen("diferencas.txt", "w");
 

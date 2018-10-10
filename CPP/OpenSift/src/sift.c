@@ -46,9 +46,9 @@
 
 /************************* Local Function Prototypes *************************/
 
-int cvRound(double i) {
+/*int cvRound(double i) {
     return (int) (i + 0.5);
-}
+}*/
 
 //static IplImage* create_init_img( IplImage*, int, double );
 static IplImage *convert_to_gray32(IplImage *);

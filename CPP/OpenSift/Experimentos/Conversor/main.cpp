@@ -39,6 +39,8 @@ int main(int argc, char *argv[]) {
     char nome[100];
     strcpy(nome, argv[1]);
     *strrchr(nome, '.') = '\0';
+    
+    cout << nome << endl;
     int i;
     #pragma omp parallel for private(i)
     for (i = start; i <= end; i++) {
@@ -49,7 +51,7 @@ int main(int argc, char *argv[]) {
         sprintf(nome, "%s-%d.png", nome, i);
         QFileInfo f(nome);
         printf("%s\n", f.fileName().toStdString().c_str());
-        imwrite(f.fileName().toStdString(), current, vector<int>{CV_IMWRITE_PNG_COMPRESSION});
+        imwrite( (QString(argc>3?argv[4]:"") + f.fileName()).toStdString(), current, vector<int>{CV_IMWRITE_PNG_COMPRESSION});
     }
 
     return 0;
