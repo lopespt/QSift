@@ -1,7 +1,0 @@
-/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/TestPDM.dir
-/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/Experimento2.dir
-/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/Experimento1.dir
-/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/OrdenacaoSift.dir
-/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/utilities.dir
-/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/CreateSceneSequence.dir
-/Users/wachs/Dropbox/SIFT/CPP/OpenSift/build/CMakeFiles/sift.dir
