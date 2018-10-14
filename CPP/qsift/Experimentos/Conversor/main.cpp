@@ -13,6 +13,7 @@
 // ------------------------------------------------------------------------
 
 #include <QFileInfo>
+#include <QDir>
 #include <opencv2/core.hpp>
 #include <opencv2/opencv.hpp>
 #include <stdlib.h>
@@ -21,10 +22,15 @@
 using namespace cv;
 using namespace std;
 
-QString formatFilename(QString folder,QString filename, unsigned int frame){
+string formatFilename(QString folder,QString filename, unsigned int frame){
     stringstream s;
-    s << folder << "/" << filename << "-" << frame << ".png"
-    return s.toString();
+    QDir d = QDir(folder);
+    if(d.isRelative()){
+        s << "./";
+    }
+    s << folder.toStdString() << "/" << filename.toStdString() << "-" << frame << ".png";
+    cout << s.str() << endl;
+    return s.str();
 }
 
 int main(int argc, char *argv[]) {
@@ -42,22 +48,21 @@ int main(int argc, char *argv[]) {
     if(end == -1)
         end = (int) (cap.get(CAP_PROP_FRAME_COUNT) - 1);
 
-    QString folder=QFileInfo(argv[0]).absoluteDir();
-    QString filenane = QFileInfo(argv[0]).filename();
+    QString folder=QFileInfo(argv[1]).absolutePath();
+    QString filename = QFileInfo(argv[1]).fileName();
     if(argc > 3){
         folder = QString(argv[4]);
     }
 
     Mat current;
     
-    cout << nome << endl;
     unsigned int i;
     #pragma omp parallel for private(i)
     for (i = start; i <= end; i++) {
         cap.set(CAP_PROP_POS_FRAMES, i);
         cap.read(current);
         
-        imwrite( formatFilename(folder, filename, i).toStdString(), current, vector<int>{CV_IMWRITE_PNG_COMPRESSION});
+        imwrite( formatFilename(folder, filename, i), current, vector<int>{CV_IMWRITE_PNG_COMPRESSION});
     }
 
     return 0;
