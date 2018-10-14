@@ -16,9 +16,16 @@
 #include <opencv2/core.hpp>
 #include <opencv2/opencv.hpp>
 #include <stdlib.h>
+#include <sstream>
 
 using namespace cv;
 using namespace std;
+
+QString formatFilename(QString folder,QString filename, unsigned int frame){
+    stringstream s;
+    s << folder << "/" << filename << "-" << frame << ".png"
+    return s.toString();
+}
 
 int main(int argc, char *argv[]) {
 
@@ -27,31 +34,30 @@ int main(int argc, char *argv[]) {
         puts("Nao consegui abrir o arquivo");
         exit(0);
     }
-    int start = std::stoi(argv[2]);
-    int end = std::stoi(argv[3]);
+    unsigned int start = std::stoi(argv[2]);
+    unsigned int end = std::stoi(argv[3]);
 
     if (start==-1)
         start = 0;
     if(end == -1)
         end = (int) (cap.get(CAP_PROP_FRAME_COUNT) - 1);
 
+    QString folder=QFileInfo(argv[0]).absoluteDir();
+    QString filenane = QFileInfo(argv[0]).filename();
+    if(argc > 3){
+        folder = QString(argv[4]);
+    }
+
     Mat current;
-    char nome[100];
-    strcpy(nome, argv[1]);
-    *strrchr(nome, '.') = '\0';
     
     cout << nome << endl;
-    int i;
+    unsigned int i;
     #pragma omp parallel for private(i)
     for (i = start; i <= end; i++) {
         cap.set(CAP_PROP_POS_FRAMES, i);
         cap.read(current);
-        strcpy(nome, argv[1]);
-        *strrchr(nome, '.') = '\0';
-        sprintf(nome, "%s-%d.png", nome, i);
-        QFileInfo f(nome);
-        printf("%s\n", f.fileName().toStdString().c_str());
-        imwrite( (QString(argc>3?argv[4]:"") + f.fileName()).toStdString(), current, vector<int>{CV_IMWRITE_PNG_COMPRESSION});
+        
+        imwrite( formatFilename(folder, filename, i).toStdString(), current, vector<int>{CV_IMWRITE_PNG_COMPRESSION});
     }
 
     return 0;
