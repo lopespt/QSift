@@ -60,13 +60,18 @@ vector<FrameInfo> createVectorSpace(const char * const source, const unsigned in
                                     const unsigned int &eFrame, const unsigned int &step,
                                     const float &h = 200) {
     VideoSurf video(source, sFrame, eFrame);
-    QVector<int> order = QVector<int>::fromStdVector(geraAleatorio(sFrame, eFrame, step));
+    vector<int> v = geraAleatorio(sFrame, eFrame, step);
+    QVector<int> order = QVector<int>::fromStdVector(v);
 
-    QVector<FrameInfo> res;
-    res = QtConcurrent::blockingMapped<QVector<FrameInfo>>(order, function<FrameInfo(const int &)>(
+    vector<FrameInfo> res;
+    /*res = QtConcurrent::blockingMapped<QVector<FrameInfo>>(order, function<FrameInfo(const int &)>(
+            [&](const int &i) { return FrameInfo{video.extractSurfFeatures(i, 100, h), i}; }));
+*/
+    auto rit = back_inserter(res);
+    transform(order.begin(), order.end(), rit, function<FrameInfo(const int &)>(
             [&](const int &i) { return FrameInfo{video.extractSurfFeatures(i, 100, h), i}; }));
 
-    return res.toStdVector();
+    return res;
 }
 
 float descr_dist_sq(const Mat &m1, const Mat &m2){
@@ -202,7 +207,7 @@ float countZeroFeatures(const vector<FrameInfo> &ordered){
 }
 
 int main(int argc, char * argv[]){
-//    printf("Hello World\n");
+    printf("Hello World\n");
     QCoreApplication app(argc, argv);
 
     QCommandLineParser parser;
@@ -227,9 +232,9 @@ int main(int argc, char * argv[]){
     if(parser.isSet("step"))
         step = parser.value("step").toInt();
 
-//    printf("Checkpoint %d", 1);
+    printf("Checkpoint %d\n", 1);
     vector<FrameInfo> captured = createVectorSpace(basename.toStdString().c_str(), from, to, step, h);
-//    printf("Checkpoint %d", 2);
+    printf("Checkpoint %d\n", 2);
 
     vector<FrameInfo> ordered = ordena(captured);
 

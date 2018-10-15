@@ -23,8 +23,7 @@ def extract_frames(video, start, end, dest_folder):
 
 
 def qsift(pasta_imagens, q_val, b_val, steps=1, start=-1, end=-1):
-    print("qsift(q_val: %s, b_val %s, steps, %s)" %
-          (float(q_val), float(b_val), int(steps)))
+    #print("qsift(q_val: %s, b_val %s, steps, %s)" % (float(q_val), float(b_val), int(steps)))
 
     def parse_qsift_output(saida):
         d = dict(
@@ -52,3 +51,37 @@ def qsift(pasta_imagens, q_val, b_val, steps=1, start=-1, end=-1):
         x = x.replace(",", ".")
         saida += x
     return parse_qsift_output(saida)
+
+
+
+
+def surf(pasta_imagens, hessian_thr, steps=1, start=-1, end=-1):
+    #print("qsift(q_val: %s, b_val %s, steps, %s)" % (float(q_val), float(b_val), int(steps)))
+
+    def parse_surf_output(saida):
+        d = dict(
+            zip(["h", "step", "zero_features", "quality"], saida.split()))
+        d["h"] = float(d["h"])
+        d["step"] = int(d["step"])
+        d["zero_features"] = float(d["zero_features"])
+        d["quality"] = float(d["quality"])
+        return d
+
+    start = ["--from", str(start)] if start != -1 else []
+    end = ["--to", str(end)] if end != -1 else []
+    steps = ["--step", str(steps)] if steps != -1 else []
+
+    p = subprocess.Popen(["../CPP/SURF/build/OrdenacaoSurf", pasta_imagens, str(hessian_thr),
+                          *start, *end, *steps], stdout=subprocess.PIPE)
+    saida = ""
+    while(True):
+        x = p.stdout.readline()
+        if b"" == x:
+            break
+        x = x.decode("utf-8")
+        x = x.replace("\n", "").replace("\r", "")
+        x = x.replace(",", ".")
+        saida += x
+    return parse_surf_output(saida)
+
+print(surf("/home/lopespt/Downloads/v1", 1))

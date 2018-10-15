@@ -1,5 +1,5 @@
 
-import functools
+from functools import partial
 import itertools
 import json
 import multiprocessing as mp
@@ -12,9 +12,12 @@ import tqdm
 
 from experiments import extract_frames, qsift
 
+def star(func, args):
+    return func(*args)
+
 
 def execute_qsift_experiments():
-    q_s = [0.1, 0.2, 0.4, 0.5, 0.7, 1.1, 1.2, 1.3, 1.4]
+    q_s = [0.1, 0.3, 0.4, 0.5, 0.7, 1.1, 1.2, 1.3, 1.4]
     b_s = [2*x for x in q_s]
     step = range(1, 10, 2)
     outfile = "../Results/qsift.json"
@@ -32,8 +35,10 @@ def execute_qsift_experiments():
 
     pool = mp.Pool(6)
 
-    x.extend(pool.starmap(functools.partial(
-        qsift, "/home/lopespt/Downloads/v1/"), rest))
+    res = pool.imap(partial(star, partial(
+        qsift, "/home/lopespt/Downloads/v1/")), rest)
+
+    x.extend(tqdm.tqdm(res, total=len(rest)))
     with open(outfile, "w") as f:
         json.dump(x, f, indent=4)
 
