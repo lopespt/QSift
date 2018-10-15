@@ -376,7 +376,7 @@ int main(int argc, char *argv[]) {
         vector<FrameInfo> ordered = ordena(captured);
         float aval2 = avalia2(ordered);
         //printf("%d\t%.2f\t%.0f\n", step, countZeroFeatures(ordered), aval2);
-        printf("%.2f\t%.2f\t%d\t%.2f\t%.4f\n", 1.0, -1., step, countZeroFeatures(ordered), aval2);
+        printf("%.2f\t%.2f\t%d\t%.2f\t%.4f\n", 1.0, b, step, countZeroFeatures(ordered), aval2);
 
         for (FrameInfo f : captured) {
             f.freeMemory();
