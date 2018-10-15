@@ -1,13 +1,14 @@
 
-import sys
-import os
-import subprocess
-from pathlib import Path
-import multiprocessing as mp
 import functools
 import itertools
-import tqdm
 import json
+import multiprocessing as mp
+import os
+import subprocess
+import sys
+from pathlib import Path
+
+import tqdm
 
 
 def extract_frames(video, start, end, dest_folder):
