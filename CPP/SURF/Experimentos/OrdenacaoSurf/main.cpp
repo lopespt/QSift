@@ -207,7 +207,6 @@ float countZeroFeatures(const vector<FrameInfo> &ordered){
 }
 
 int main(int argc, char * argv[]){
-    printf("Hello World\n");
     QCoreApplication app(argc, argv);
 
     QCommandLineParser parser;
@@ -232,9 +231,7 @@ int main(int argc, char * argv[]){
     if(parser.isSet("step"))
         step = parser.value("step").toInt();
 
-    printf("Checkpoint %d\n", 1);
     vector<FrameInfo> captured = createVectorSpace(basename.toStdString().c_str(), from, to, step, h);
-    printf("Checkpoint %d\n", 2);
 
     vector<FrameInfo> ordered = ordena(captured);
 

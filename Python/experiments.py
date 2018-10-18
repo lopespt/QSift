@@ -84,4 +84,4 @@ def surf(pasta_imagens, hessian_thr, steps=1, start=-1, end=-1):
         saida += x
     return parse_surf_output(saida)
 
-print(surf("/home/lopespt/Downloads/v1", 1))
+print(surf("/home/lopespt/Downloads/v1/", 1))

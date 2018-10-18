@@ -67,7 +67,6 @@ public:
 
 Mat VideoSurf::extractSurfFeatures(const unsigned int &frameNum, const int &maxPoints = -1,
                                    const unsigned int &h = 200){
-    cout << "frame: " << frameNum << endl;
     Mat img = readFrame(frameNum);
 
     Ptr<SURF> surf = SURF::create();
