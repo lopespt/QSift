@@ -230,7 +230,7 @@ int main(int argc, char **argv)
 	int num_keys1=0, num_keys2=0;
 	
 	
-	cout << "Computing keypoints on the two images..." << endl;
+	//cout << "Computing keypoints on the two images..." << endl;
 	time_t tstart, tend;	
 	tstart = time(0);
 

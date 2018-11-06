@@ -16,8 +16,18 @@
 #include <VideoAsift.hpp>
 #include <string>
 #include <sstream>
+#include <flimage.h>
+#include <io_png/io_png.h>
 
 using namespace std;
+
+template <typename T>
+ostream& operator << (ostream& out, const vector<T>& x){
+    for(int i=0; i< x.size();i++){
+        out << x[i] << "\t";
+    }
+    return out;
+}
 
 Mat VideoASift::readFrame(const int &frameNum){
     Mat m;
@@ -32,40 +42,36 @@ VideoASift::VideoASift(string basename, const unsigned int& from,const unsigned 
 }
 
 
-Mat VideoASift::extractASiftFeatures(const unsigned int &frameNum, const int &maxPoints,
-                            const unsigned int &h){
+FrameInfo VideoASift::extractASiftFeatures(const unsigned int &frameNum){
 
         ///// Compute ASIFT keypoints
 	// number N of tilts to simulate t = 1, \sqrt{2}, (\sqrt{2})^2, ..., {\sqrt{2}}^(N-1)
-	int num_of_tilts1 = 7;
-	int num_of_tilts2 = 7;
-//	int num_of_tilts1 = 1;
-//	int num_of_tilts2 = 1;
+	int num_of_tilts1 = 5;
+	int num_of_tilts2 = 5;
 	int verb = 0;
 	// Define the SIFT parameters
-
-	vector< vector< keypointslist > > keys1;		
+    FrameInfo ret;
+			
 	
 	
 	int num_keys1=0, num_keys2=0;
 	
 	
-	cout << "Computing keypoints on the two images..." << endl;
+	//cout << "Computing keypoints on the two images..." << endl;
 	
     Mat frame = readFrame(frameNum);
     
-    vector<float> img;
-    img.resize(frame.rows*frame.cols);
+    flimage image;
     cv::cvtColor(frame, frame, cv::COLOR_BGR2GRAY);
-    namedWindow("frame");
-    imshow("frame", frame);
-    waitKey(0);
+    frame.convertTo(frame, CV_32FC1);
+    image.create(frame.cols, frame.rows, (float*)frame.data);
     
-    return frame;
+    vector<float> fimage((float*)frame.data, (float*)frame.dataend);
+    ret.h = frame.rows;
+    ret.w = frame.cols;
 
-	/*num_keys1 = compute_asift_keypoints(ipixels1_zoom, wS1, hS1, num_of_tilts1, verb, keys1, siftparameters);
-	
-	tend = time(0);
-	cout << "Keypoints computation accomplished in " << difftime(tend, tstart) << " seconds." << endl;
-    */
+    num_keys1 = compute_asift_keypoints(fimage, frame.cols, frame.rows, num_of_tilts1, verb, ret.keypoints, siftparameters);
+    //cout << num_keys1 << endl;
+    return ret;
+
 }

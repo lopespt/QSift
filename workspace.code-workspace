@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"path": "CPP/SURF"
+		},
+		{
+			"path": "CPP/qsift"
+		},
+		{
+			"path": "CPP/asift"
+		},
+		{
+			"path": "Python"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.html": "html",
+			"array": "cpp",
+			"*.tcc": "cpp",
+			"istream": "cpp",
+			"tuple": "cpp",
+			"utility": "cpp",
+			"variant": "cpp",
+			"iosfwd": "cpp",
+			"ostream": "cpp",
+			"qcommandlineparser": "cpp",
+			"vector": "cpp",
+			"iostream": "cpp"
+		},
+		"cmake.buildDirectory": "${workspaceFolder}/build"
+	}
+}

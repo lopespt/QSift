@@ -9,9 +9,13 @@ CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
 # 	and enable OPENMP library in C/C++/Language.
 PROJECT(ASIFT)
 
-ADD_SUBDIRECTORY(io_png)
+#ADD_SUBDIRECTORY(io_png)
 ADD_SUBDIRECTORY(libMatch)
 ADD_SUBDIRECTORY(libNumerics)
+
+FIND_PACKAGE(PNG)
+FIND_PACKAGE(ZLIB)
+MESSAGE(STATUS ${ZLIB_LIBRARIES})
 
 FIND_PACKAGE(OpenMP) 
 if (OPENMP_FOUND) 
@@ -42,14 +46,16 @@ set(ASIFT_srcs
 	
 add_library(asift numerics1.cpp frot.cpp splines.cpp fproj.cpp
 library.cpp flimage.cpp filter.cpp compute_asift_keypoints.cpp
-compute_asift_matches.cpp orsa.cpp demo_lib_sift.cpp)
-TARGET_LINK_LIBRARIES(asift PRIVATE Match Numerics)
-target_include_directories(asift PRIVATE .
-					./io_png
-					./io_png/libs/png)
+compute_asift_matches.cpp orsa.cpp demo_lib_sift.cpp io_png/io_png.c)
+TARGET_LINK_LIBRARIES(asift PRIVATE Match Numerics) 
+TARGET_LINK_LIBRARIES(asift PUBLIC ${ZLIB_LIBRARIES} ${PNG_LIBRARIES})
 
-add_executable(demo_ASIFT ${ASIFT_srcs})
-target_include_directories(demo_ASIFT PRIVATE .
-					./io_png
-					./io_png/libs/png)
-TARGET_LINK_LIBRARIES(demo_ASIFT PRIVATE png zlib Match Numerics)
+target_include_directories(asift PRIVATE .)
+					#./io_png
+					#./io_png/libs/png)
+
+#add_executable(demo_ASIFT ${ASIFT_srcs})
+#target_include_directories(demo_ASIFT PRIVATE .)
+					#./io_png
+					#./io_png/libs/png)
+#TARGET_LINK_LIBRARIES(demo_ASIFT PUBLIC ${ZLIB_LIBRARIES} ${PNG_LIBRARIES} Match Numerics)

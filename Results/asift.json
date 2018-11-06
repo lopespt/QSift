@@ -1,0 +1,67 @@
+[
+    {
+        "result": {
+            "step": 3,
+            "quality": 10.0,
+            "folder": "/home/lopespt/Downloads/v1/"
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            3,
+            0,
+            100
+        ]
+    },
+    {
+        "result": {
+            "step": 5,
+            "quality": 6.0,
+            "folder": "/home/lopespt/Downloads/v1/"
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            5,
+            0,
+            100
+        ]
+    },
+    {
+        "result": {
+            "step": 7,
+            "quality": 3.0,
+            "folder": "/home/lopespt/Downloads/v1/"
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            7,
+            0,
+            100
+        ]
+    },
+    {
+        "result": {
+            "step": 9,
+            "quality": -2.0,
+            "folder": "/home/lopespt/Downloads/v1/"
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            9,
+            0,
+            100
+        ]
+    },
+    {
+        "result": {
+            "step": 11,
+            "quality": 2.0,
+            "folder": "/home/lopespt/Downloads/v1/"
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            11,
+            0,
+            100
+        ]
+    }
+]

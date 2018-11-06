@@ -1,4 +1,3 @@
-
 import json
-from matplotlib import pyplot
 
+from matplotlib import pyplot

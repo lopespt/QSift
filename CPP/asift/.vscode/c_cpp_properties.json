@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "name": "Linux2",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "/opt/cuda/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+        },
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "/opt/cuda/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+            "configurationProvider": "vector-of-bool.cmake-tools"
+        }
+    ],
+    "version": 4
+}

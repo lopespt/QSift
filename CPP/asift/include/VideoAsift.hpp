@@ -36,6 +36,12 @@ using namespace std;
 using namespace cv;
 using namespace cv::xfeatures2d;
 
+struct FrameInfo{
+    int h;
+    int w;
+    vector<vector< keypointslist> > keypoints;
+};
+
 class VideoASift {
 private:
     unsigned int from;
@@ -49,8 +55,7 @@ private:
 public:
 //    VideoASift(string path);
     VideoASift(string basename, const unsigned int &from, const unsigned int &to);
-    Mat extractASiftFeatures(const unsigned int &frameNum, const int &maxPoints,
-                            const unsigned int &h);
+    FrameInfo extractASiftFeatures(const unsigned int &frameNum);
 };
 
 #endif //CPP_VideoASift_H

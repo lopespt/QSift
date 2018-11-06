@@ -11,8 +11,6 @@
 //   Improve SIFT Algorithm Under Severe Conditions. Pattern Recognition.
 //
 // ------------------------------------------------------------------------
-
-
 #include <stdio.h>
 #include <opencv2/core.hpp>
 #include <QString>

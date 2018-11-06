@@ -1,0 +1,32 @@
+[
+    {
+        "result": {
+            "h": 100.0,
+            "step": 3,
+            "zero_features": 0.0,
+            "quality": 2.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            100,
+            3,
+            0,
+            100
+        ]
+    },
+    {
+        "result": {
+            "h": 100.0,
+            "step": 5,
+            "zero_features": 0.0,
+            "quality": -3.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            100,
+            5,
+            0,
+            100
+        ]
+    }
+]

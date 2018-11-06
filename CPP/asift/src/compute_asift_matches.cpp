@@ -350,7 +350,7 @@ void compensate_affine_coor(matching &matching1, int w1, int h1, int w2, int h2,
 	matching1.second.y = y2;
 }
 
-int compute_asift_matches(int num_of_tilts1, int num_of_tilts2, int w1, int h1, int w2, int h2, int verb, vector< vector< keypointslist > >& keys1, vector< vector< keypointslist > >& keys2, matchingslist &matchings, siftPar &siftparameters)
+int compute_asift_matches(int num_of_tilts1, int num_of_tilts2, int w1, int h1, int w2, int h2, int verb, vector< vector< keypointslist > >& keys1, vector< vector< keypointslist > >& keys2, matchingslist &matchings, siftPar &siftparameters, float* pnfa)
 // Match the ASIFT keypoints. 
 // Input:
 // num_of_tilts1, num_of_tilts2: number of tilts that have been simulated on the two images. (They can be different.)
@@ -764,27 +764,33 @@ int compute_asift_matches(int num_of_tilts1, int num_of_tilts2, int w1, int h1, 
 				matchings = matchings_unique;
 				Minfoall = Minfoall_unique;     
 				
-				cout << "The two images match! " << matchings.size() << " matchings are identified. log(nfa)=" << nfa << "." << endl;
+				/*cout << "The two images match! " << matchings.size() << " matchings are identified. log(nfa)=" << nfa << "." << endl;
+				*/
+				if(pnfa){
+					*pnfa = nfa;
+				}
 			}
 			else 
 			{
 				matchings.clear();
 				Minfoall.clear();
-				cout << "The two images do not match. The matching is not significant: log(nfa)=" << nfa << "." << endl;
+				//cout << "The two images do not match. The matching is not significant: log(nfa)=" << nfa << "." << endl;
 			}
 		}
 		else 
 		{
 			matchings.clear();
 			Minfoall.clear();
-			cout << "The two images do not match. Not enough matches to do epipolar filtering." << endl;		
+			//cout << "The two images do not match. Not enough matches to do epipolar filtering." << endl;		
 		}
 	}
 	else 
 	{
-		cout << "The two images do not match.\n" << endl;
+		//cout << "The two images do not match.\n" << endl;
 	}
 	
+	
+
 	return matchings.size();
 
 }

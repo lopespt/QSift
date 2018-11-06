@@ -562,7 +562,7 @@ int compute_asift_keypoints(vector<float>& image, int width, int height, int num
       {
         num_keys_total += (int) keys_all[tt][rr].size();
       }				
-      printf("%d ASIFT keypoints are detected. \n", num_keys_total);
+      //printf("%d ASIFT keypoints are detected. \n", num_keys_total);
   }
 
   return num_keys_total;
