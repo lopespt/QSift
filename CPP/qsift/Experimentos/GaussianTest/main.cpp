@@ -14,7 +14,6 @@
 
 #include <VideoSift.hpp>
 
-
 #define VIDEO_SRC "/Users/wachs/Dropbox/SIFT/Videos/MundoVisto-de-Cima/ScreenCaptureProject108.mp4"
 #define IMG_SRC "/Users/wachs/Dropbox/Tchu/29.jpg"
 #define CutThreshold 200000
