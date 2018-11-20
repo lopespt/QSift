@@ -28,5 +28,605 @@
             0,
             100
         ]
+    },
+    {
+        "result": {
+            "h": 100.0,
+            "step": 3,
+            "zero_features": 0.0,
+            "quality": -4.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            100,
+            3,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 100.0,
+            "step": 5,
+            "zero_features": 0.0,
+            "quality": 1.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            100,
+            5,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 100.0,
+            "step": 7,
+            "zero_features": 0.0,
+            "quality": 1.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            100,
+            7,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 100.0,
+            "step": 9,
+            "zero_features": 0.0,
+            "quality": 0.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            100,
+            9,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 100.0,
+            "step": 1,
+            "zero_features": 0.0,
+            "quality": -1.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            100,
+            1,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 200.0,
+            "step": 3,
+            "zero_features": 0.0,
+            "quality": -2.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            200,
+            3,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 200.0,
+            "step": 5,
+            "zero_features": 0.0,
+            "quality": 3.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            200,
+            5,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 200.0,
+            "step": 7,
+            "zero_features": 0.0,
+            "quality": 1.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            200,
+            7,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 200.0,
+            "step": 1,
+            "zero_features": 0.0,
+            "quality": -5.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            200,
+            1,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 200.0,
+            "step": 9,
+            "zero_features": 0.0,
+            "quality": -4.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            200,
+            9,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 300.0,
+            "step": 3,
+            "zero_features": 0.0,
+            "quality": 2.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            300,
+            3,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 300.0,
+            "step": 5,
+            "zero_features": 0.0,
+            "quality": -3.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            300,
+            5,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 300.0,
+            "step": 7,
+            "zero_features": 0.0,
+            "quality": 1.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            300,
+            7,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 300.0,
+            "step": 9,
+            "zero_features": 0.0,
+            "quality": -2.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            300,
+            9,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 300.0,
+            "step": 1,
+            "zero_features": 0.0,
+            "quality": 5.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            300,
+            1,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 400.0,
+            "step": 3,
+            "zero_features": 0.0,
+            "quality": 0.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            400,
+            3,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 400.0,
+            "step": 5,
+            "zero_features": 0.0,
+            "quality": 1.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            400,
+            5,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 400.0,
+            "step": 7,
+            "zero_features": 0.0,
+            "quality": -3.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            400,
+            7,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 400.0,
+            "step": 9,
+            "zero_features": 0.0,
+            "quality": 0.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            400,
+            9,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 400.0,
+            "step": 1,
+            "zero_features": 0.0,
+            "quality": 7.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            400,
+            1,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 100.0,
+            "step": 13,
+            "zero_features": 0.0,
+            "quality": -2.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            100,
+            13,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 100.0,
+            "step": 11,
+            "zero_features": 0.0,
+            "quality": 0.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            100,
+            11,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 100.0,
+            "step": 15,
+            "zero_features": 0.0,
+            "quality": 1.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            100,
+            15,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 100.0,
+            "step": 17,
+            "zero_features": 0.0,
+            "quality": -2.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            100,
+            17,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 100.0,
+            "step": 19,
+            "zero_features": 0.0,
+            "quality": 0.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            100,
+            19,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 200.0,
+            "step": 11,
+            "zero_features": 0.0,
+            "quality": 2.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            200,
+            11,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 200.0,
+            "step": 13,
+            "zero_features": 0.0,
+            "quality": 2.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            200,
+            13,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 200.0,
+            "step": 15,
+            "zero_features": 0.0,
+            "quality": 1.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            200,
+            15,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 200.0,
+            "step": 17,
+            "zero_features": 0.0,
+            "quality": -2.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            200,
+            17,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 200.0,
+            "step": 19,
+            "zero_features": 0.0,
+            "quality": 2.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            200,
+            19,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 300.0,
+            "step": 11,
+            "zero_features": 0.0,
+            "quality": -2.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            300,
+            11,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 300.0,
+            "step": 13,
+            "zero_features": 0.0,
+            "quality": 0.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            300,
+            13,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 300.0,
+            "step": 15,
+            "zero_features": 0.0,
+            "quality": 1.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            300,
+            15,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 300.0,
+            "step": 17,
+            "zero_features": 0.0,
+            "quality": 0.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            300,
+            17,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 300.0,
+            "step": 19,
+            "zero_features": 0.0,
+            "quality": 0.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            300,
+            19,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 400.0,
+            "step": 11,
+            "zero_features": 0.0,
+            "quality": 2.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            400,
+            11,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 400.0,
+            "step": 13,
+            "zero_features": 0.0,
+            "quality": 2.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            400,
+            13,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 400.0,
+            "step": 15,
+            "zero_features": 0.0,
+            "quality": 1.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            400,
+            15,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 400.0,
+            "step": 17,
+            "zero_features": 0.0,
+            "quality": 0.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            400,
+            17,
+            -1,
+            -1
+        ]
+    },
+    {
+        "result": {
+            "h": 400.0,
+            "step": 19,
+            "zero_features": 0.0,
+            "quality": 0.0
+        },
+        "parameters": [
+            "/home/lopespt/Downloads/v1/",
+            400,
+            19,
+            -1,
+            -1
+        ]
     }
 ]
