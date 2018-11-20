@@ -40,9 +40,10 @@ def qsift(*args, **kwargs):
     sstart = ["--from", str(start)] if start != -1 else []
     send = ["--to", str(end)] if end != -1 else []
     ssteps = ["--step", str(steps)] if steps != -1 else []
-
+    
     p = subprocess.Popen(
         [
+            "optirun",
             "../CPP/qsift/build/OrdenacaoSift2",
             pasta_imagens,
             str(q_val),
@@ -82,6 +83,7 @@ def surf(pasta_imagens, hessian_thr, steps=1, start=-1, end=-1):
 
     p = subprocess.Popen(
         [
+            "optirun",
             "../CPP/SURF/build/OrdenacaoSurf",
             pasta_imagens,
             str(hessian_thr),
@@ -119,7 +121,13 @@ def asift(*args, **kwargs):
     steps = ["--step", str(steps)] if steps != -1 else []
 
     p = subprocess.Popen(
-        ["../CPP/asift/build/OrdenacaoASift", pasta_imagens, *start, *end, *steps],
+        [
+            "optirun",
+            "../CPP/asift/build/OrdenacaoASift", 
+            pasta_imagens, 
+            *start, 
+            *end, 
+            *steps],
         stdout=subprocess.PIPE,
     )
     saida = ""
