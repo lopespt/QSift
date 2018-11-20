@@ -173,8 +173,8 @@ float avalia2(vector<FrameInfo> result) {
     for (int i = 2; i < result.size() && result[i-1].features.rows>0 && result[i].features.rows>0; i++) {
         res +=  result[i - 1].frame_num < result[i].frame_num ? 1 : -1;
     }
-    return res;
-    // return (res + float(result.size() - 1)) / (2.0 * float(result.size()) - 2.0);
+    //return res;
+    return (res + float(result.size() - 1)) / (2.0 * float(result.size()) - 2.0);
 }
 
 tuple<int,int, QString> discoverFramesInFolder(QString folder){
