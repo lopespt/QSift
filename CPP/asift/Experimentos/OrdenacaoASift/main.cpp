@@ -21,12 +21,12 @@ vector<vector<float>> distancias(vector<ExperimentFrame> &list) {
 
   vector<vector<float>> d(list.size());
 
-  for (int i = 0; i < d.size(); i++) {
+  for (unsigned int i = 0; i < d.size(); i++) {
     d[i].resize(list.size());
   }
 
-  for (int i = 0; i < d.size(); i++) {
-    for (int j = 0; j < d.size(); j++) {
+  for (unsigned int i = 0; i < d.size(); i++) {
+    for (unsigned int j = 0; j < d.size(); j++) {
       // cout << i << " " << j << endl;
       matchingslist mlist;
       siftPar parameters;
@@ -61,10 +61,11 @@ tuple<int, int, QString> discoverFramesInFolder(QString folder) {
 
 float avalia(vector<int> result) {
   float res = 0;
-  for (int i = 2; i < result.size(); i++) {
+  for (unsigned int i = 2; i < result.size(); i++) {
     res += (result[i - 1] < result[i]) ? 1 : -1;
   }
-  return res;
+  // return res;
+  return (res + float(result.size() - 1)) / (2.0 * float(result.size()) - 2.0);
 }
 
 void runExperiment(QString folder, int from = 0, int to = 0, int step = 1) {
@@ -101,9 +102,9 @@ void runExperiment(QString folder, int from = 0, int to = 0, int step = 1) {
   vector<int> ordem;
   ordem.push_back(0);
 
-  for (int i = 1; i < d.size(); i++) {
+  for (unsigned int i = 1; i < d.size(); i++) {
     int m = framesDisponiveis[0];
-    for (int fidx : framesDisponiveis) {
+    for (unsigned int fidx : framesDisponiveis) {
       // quanto menor d, mais próximo
       if (i != fidx && d[i][fidx] < d[i][m]) {
         m = fidx;
@@ -119,8 +120,6 @@ void runExperiment(QString folder, int from = 0, int to = 0, int step = 1) {
 
 int main(int argc, char **argv) {
   QCoreApplication app(argc, argv);
-
-  int aaa;
 
   QCommandLineParser parser;
   parser.addHelpOption();
@@ -140,24 +139,23 @@ int main(int argc, char **argv) {
   runExperiment(parser.positionalArguments().value(0), from, to, step);
   // printf("Checkpoint %d\n", 1);
   /*
-      float q = parser.positionalArguments().value(1).toFloat();
-      float b = parser.positionalArguments().value(2).toFloat();
-      int from, to, step=1;
-      QString basename;
-      tie(from, to, basename) =
+     float q = parser.positionalArguments().value(1).toFloat();
+     float b = parser.positionalArguments().value(2).toFloat();
+     int from, to, step=1;
+     QString basename;
+     tie(from, to, basename) =
      discoverFramesInFolder(parser.positionalArguments().value(0)); basename =
      parser.positionalArguments().value(0) + basename;
 
-      // printf("Checkpoint %d\n", 2);
+  // printf("Checkpoint %d\n", 2);
 
-      if(parser.isSet("from"))
-          from = parser.value("from").toInt();
-      if(parser.isSet("to"))
-          to = parser.value("to").toInt();
-      if(parser.isSet("step"))
-          step = parser.value("step").toInt();
+  if(parser.isSet("from"))
+  from = parser.value("from").toInt();
+  if(parser.isSet("to"))
+  to = parser.value("to").toInt();
+  if(parser.isSet("step"))
+  step = parser.value("step").toInt();
 
-    */
-
+*/
   return 0;
 }
