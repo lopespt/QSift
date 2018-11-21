@@ -20,7 +20,8 @@ struct ExperimentFrame {
 vector<vector<float>> distancias(vector<ExperimentFrame> &list) {
 
   vector<vector<float>> d(list.size());
-
+  
+  
   for (unsigned int i = 0; i < d.size(); i++) {
     d[i].resize(list.size());
   }
@@ -45,7 +46,7 @@ tuple<int, int, QString> discoverFramesInFolder(QString folder) {
   QFileInfo ff(folder);
   QFileInfoList imageFiles = ff.dir().entryInfoList();
   QVector<int> indexes;
-  QRegularExpression re("-(\\d*)\\.\\w*$");
+  QRegularExpression re("[-_](\\d*)\\.\\w*$");
   QString basename;
   for (auto fi : imageFiles) {
     QRegularExpressionMatch m = re.match(fi.fileName());
@@ -88,7 +89,8 @@ void runExperiment(QString folder, int from = 0, int to = 0, int step = 1) {
   for (int i = from; i < to; i += step) {
     ExperimentFrame frame;
     frame.num = i;
-    frame.features = vid.extractASiftFeatures(i);
+    //frame.features = vid.extractASiftFeatures(i);
+    frame.features = vid.extractASiftFeaturesMemoized(i);
     frames.push_back(frame);
   }
 
@@ -157,5 +159,6 @@ int main(int argc, char **argv) {
   step = parser.value("step").toInt();
 
 */
+
   return 0;
 }

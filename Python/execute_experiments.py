@@ -115,12 +115,13 @@ def arange(start, end, step):
     return [round(i, 2) for i in np.arange(start, end, step).tolist()]
 
 
-execute_qsift_experiments(pastas, arange(0.2, 1.8, 0.2), arange(0.2, 2, 0.4),
-                          arange(1, 200, 5), "qsift.json")
+# execute_qsift_experiments(pastas, arange(0.2, 1.8, 0.2), arange(0.2, 2, 0.4),
+                          # arange(1, 200, 5), "qsift.json")
 
 # execute_qsift_experiments(pastas, [0.5], [0.5], [2], arquivos)
 
-execute_surf_experiments(pastas, arange(100, 300, 50), arange(1, 200, 5),
-                         "surf.json")
+# execute_surf_experiments(pastas, arange(100, 300, 50), arange(1, 200, 5),
+#                          "surf.json")
+
 # execute_surf_experiments()
 execute_asift_experiments(pastas, arange(1, 200, 5), "asift.json")

@@ -15,12 +15,60 @@
 #include <VideoAsift.hpp>
 #include <flimage.h>
 #include <io_png/io_png.h>
+#include <json.hpp>
 #include <opencv2/opencv.hpp>
 #include <sstream>
 #include <string>
+#include <json.hpp>
+#include <boost/serialization/serialization.hpp>
+#include <boost/serialization/vector.hpp>
+#include <boost/archive/binary_oarchive.hpp>
+#include <boost/archive/binary_iarchive.hpp>
+#include <fstream>
 
+using namespace boost::serialization;
+using namespace nlohmann;
 using namespace std;
 using namespace cv;
+
+
+
+
+template<class Archive>
+void serialize(Archive & ar, keypoint & g, const unsigned int version)
+{
+    ar & g.angle;
+    ar & g.scale;
+    ar & g.vec;
+    ar & g.x;
+    ar & g.y;
+}
+
+template<class Archive>
+void serialize(Archive & ar, FrameInfo & g, const unsigned int version)
+{
+    ar & g.h;
+    ar & g.w;
+    ar & g.keypoints;
+}
+
+template<class Archive>
+void deserialize(Archive & ar, keypoint & g, const unsigned int version)
+{
+    ar & g.angle;
+    ar & g.scale;
+    ar & g.vec;
+    ar & g.x;
+    ar & g.y;
+}
+
+template<class Archive>
+void deserialize(Archive & ar, FrameInfo & g, const unsigned int version)
+{
+    ar & g.h;
+    ar & g.w;
+    ar & g.keypoints;
+}
 
 template <typename T> ostream &operator<<(ostream &out, const vector<T> &x) {
   for (int i = 0; i < x.size(); i++) {
@@ -43,8 +91,26 @@ VideoASift::VideoASift(string basename, const unsigned int &from,
   default_sift_parameters(siftparameters);
 }
 
-FrameInfo VideoASift::extractASiftFeatures(const unsigned int &frameNum) {
 
+FrameInfo VideoASift::extractASiftFeaturesMemoized(const unsigned int &frameNum){
+  stringstream ss;
+  ss << basename << frameNum << ".asift";
+  
+  FrameInfo ret;
+  ifstream ifs(ss.str(), ios_base::binary);
+  try{
+    if (ifs){
+      boost::archive::binary_iarchive entrada(ifs);
+      entrada >> ret; 
+      return ret;
+    }
+  }catch(exception e){
+  }
+  return extractASiftFeatures(frameNum);
+
+}
+
+FrameInfo VideoASift::extractASiftFeatures(const unsigned int &frameNum) {
   ///// Compute ASIFT keypoints
   // number N of tilts to simulate t = 1, \sqrt{2}, (\sqrt{2})^2, ...,
   // {\sqrt{2}}^(N-1)
@@ -72,6 +138,14 @@ FrameInfo VideoASift::extractASiftFeatures(const unsigned int &frameNum) {
   num_keys1 =
       compute_asift_keypoints(fimage, frame.cols, frame.rows, num_of_tilts1,
                               verb, ret.keypoints, siftparameters);
-  // cout << num_keys1 << endl;
+
+
+  //Memoiza os keypoints
+  stringstream ss;
+  ss << basename << frameNum << ".asift";
+  ofstream ofs(ss.str(), ios_base::binary);
+  boost::archive::binary_oarchive saida(ofs);
+  saida << ret;
+
   return ret;
 }

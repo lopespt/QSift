@@ -1,0 +1,100 @@
+[
+    {
+        "parameters": [
+            "asift",
+            "/home/lopespt/tmp/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            191,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 191,
+            "quality": 0.5,
+            "folder": "/home/lopespt/tmp/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/lopespt/tmp/qsift/RunningExperiment/ImageSequences/monkey5/",
+            21,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 21,
+            "quality": 0.981481,
+            "folder": "/home/lopespt/tmp/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/lopespt/tmp/qsift/RunningExperiment/ImageSequences/marple2/",
+            51,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 51,
+            "quality": 0.5,
+            "folder": "/home/lopespt/tmp/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/lopespt/tmp/qsift/RunningExperiment/ImageSequences/monkey5/",
+            156,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 156,
+            "quality": 0.833333,
+            "folder": "/home/lopespt/tmp/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/lopespt/tmp/qsift/RunningExperiment/ImageSequences/head/",
+            156,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 156,
+            "quality": 0.5,
+            "folder": "/home/lopespt/tmp/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/lopespt/tmp/qsift/RunningExperiment/ImageSequences/monkey5/",
+            71,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 71,
+            "quality": 0.9375,
+            "folder": "/home/lopespt/tmp/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/lopespt/tmp/qsift/RunningExperiment/ImageSequences/marple17/",
+            196,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 196,
+            "quality": 0.5,
+            "folder": "/home/lopespt/tmp/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    }
+]

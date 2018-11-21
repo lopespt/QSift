@@ -40,7 +40,6 @@ struct FrameInfo {
   int w;
   vector<vector<keypointslist>> keypoints;
 };
-
 class VideoASift {
 private:
   unsigned int from;
@@ -55,6 +54,7 @@ public:
   //    VideoASift(string path);
   VideoASift(string basename, const unsigned int &from, const unsigned int &to);
   FrameInfo extractASiftFeatures(const unsigned int &frameNum);
+  FrameInfo extractASiftFeaturesMemoized(const unsigned int &frameNum);
 };
 
 #endif // CPP_VideoASift_H

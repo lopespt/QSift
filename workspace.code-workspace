@@ -1,16 +1,19 @@
 {
 	"folders": [
 		{
-			"path": "CPP/SURF"
+			"path": "CPP/qsift"
 		},
 		{
-			"path": "CPP/qsift"
+			"path": "CPP/SURF"
 		},
 		{
 			"path": "CPP/asift"
 		},
 		{
 			"path": "Python"
+		},
+		{
+			"path": "Bash"
 		}
 	],
 	"settings": {
@@ -26,7 +29,52 @@
 			"ostream": "cpp",
 			"qcommandlineparser": "cpp",
 			"vector": "cpp",
-			"iostream": "cpp"
+			"iostream": "cpp",
+			"atomic": "cpp",
+			"cctype": "cpp",
+			"chrono": "cpp",
+			"clocale": "cpp",
+			"cmath": "cpp",
+			"complex": "cpp",
+			"condition_variable": "cpp",
+			"cstdarg": "cpp",
+			"cstddef": "cpp",
+			"cstdint": "cpp",
+			"cstdio": "cpp",
+			"cstdlib": "cpp",
+			"cstring": "cpp",
+			"ctime": "cpp",
+			"cwchar": "cpp",
+			"cwctype": "cpp",
+			"deque": "cpp",
+			"forward_list": "cpp",
+			"list": "cpp",
+			"unordered_map": "cpp",
+			"exception": "cpp",
+			"fstream": "cpp",
+			"functional": "cpp",
+			"future": "cpp",
+			"initializer_list": "cpp",
+			"iomanip": "cpp",
+			"limits": "cpp",
+			"memory": "cpp",
+			"mutex": "cpp",
+			"new": "cpp",
+			"numeric": "cpp",
+			"optional": "cpp",
+			"ratio": "cpp",
+			"sstream": "cpp",
+			"stdexcept": "cpp",
+			"streambuf": "cpp",
+			"string_view": "cpp",
+			"system_error": "cpp",
+			"thread": "cpp",
+			"cinttypes": "cpp",
+			"type_traits": "cpp",
+			"typeinfo": "cpp",
+			"valarray": "cpp",
+			"__config": "cpp",
+			"__nullptr": "cpp"
 		},
 		"cmake.buildDirectory": "${workspaceFolder}/build"
 	}
