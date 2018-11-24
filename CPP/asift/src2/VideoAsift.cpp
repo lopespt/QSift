@@ -15,11 +15,9 @@
 #include <VideoAsift.hpp>
 #include <flimage.h>
 #include <io_png/io_png.h>
-#include <json.hpp>
 #include <opencv2/opencv.hpp>
 #include <sstream>
 #include <string>
-#include <json.hpp>
 #include <boost/serialization/serialization.hpp>
 #include <boost/serialization/vector.hpp>
 #include <boost/archive/binary_oarchive.hpp>
@@ -27,7 +25,6 @@
 #include <fstream>
 
 using namespace boost::serialization;
-using namespace nlohmann;
 using namespace std;
 using namespace cv;
 

@@ -96,5 +96,3029 @@
             "quality": 0.5,
             "folder": "/home/lopespt/tmp/qsift/RunningExperiment/ImageSequences/marple17/"
         }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            41,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 41,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            91,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 91,
+            "quality": 0.916667,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            81,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 81,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            126,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 126,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            101,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 101,
+            "quality": 0.9,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            176,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 176,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            161,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 161,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            176,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 176,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            131,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 131,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            116,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 116,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            71,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 71,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            186,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 186,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            106,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 106,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            121,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 121,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            86,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 86,
+            "quality": 0.916667,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            196,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 196,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            166,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 166,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            11,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 11,
+            "quality": 0.916667,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            31,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 31,
+            "quality": 0.9375,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            51,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 51,
+            "quality": 0.954545,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            186,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 186,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            156,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 156,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            186,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 186,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            76,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 76,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            91,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 91,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            136,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 136,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            46,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 46,
+            "quality": 0.9,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            86,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 86,
+            "quality": 0.916667,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            66,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 66,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            101,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 101,
+            "quality": 0.9,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            111,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 111,
+            "quality": 0.9,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            101,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 101,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            71,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 71,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            111,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 111,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            171,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 171,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            26,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 26,
+            "quality": 0.944444,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            61,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 61,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            46,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 46,
+            "quality": 0.958333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            6,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 6,
+            "quality": 0.958333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            191,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 191,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            196,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 196,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            21,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 21,
+            "quality": 0.981481,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            26,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 26,
+            "quality": 0.978261,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            81,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 81,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            141,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 141,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            156,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 156,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            41,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 41,
+            "quality": 0.964286,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            66,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 66,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            81,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 81,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            191,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 191,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            151,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 151,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            96,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 96,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            26,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 26,
+            "quality": 0.95,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            131,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 131,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            116,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 116,
+            "quality": 0.9,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            131,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 131,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            106,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 106,
+            "quality": 0.9,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            56,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 56,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            96,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 96,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            196,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 196,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            66,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 66,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            81,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 81,
+            "quality": 0.928571,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            166,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 166,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            126,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 126,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            196,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 196,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            101,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 101,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            11,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 11,
+            "quality": 0.977273,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            56,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 56,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            156,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 156,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            21,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 21,
+            "quality": 0.958333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            181,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 181,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            11,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 11,
+            "quality": 0.990741,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            36,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 36,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            136,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 136,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            56,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 56,
+            "quality": 0.95,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            31,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 31,
+            "quality": 0.973684,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            36,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 36,
+            "quality": 0.928571,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            136,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 136,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            191,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 191,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            146,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 146,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            181,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 181,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            16,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 16,
+            "quality": 0.985714,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            161,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 161,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            146,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 146,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            161,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 161,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            76,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 76,
+            "quality": 0.928571,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            41,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 41,
+            "quality": 0.916667,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            96,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 96,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            41,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 41,
+            "quality": 0.916667,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            41,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 41,
+            "quality": 0.964286,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            171,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 171,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            141,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 141,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            151,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 151,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            46,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 46,
+            "quality": 0.961538,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            51,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 51,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            141,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 141,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            186,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 186,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            31,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 31,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            61,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 61,
+            "quality": 0.944444,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            131,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 131,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            176,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 176,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            96,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 96,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            51,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 51,
+            "quality": 0.9,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            151,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 151,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            156,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 156,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            21,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 21,
+            "quality": 0.954545,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            176,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 176,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            186,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 186,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            66,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 66,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            81,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 81,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            36,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 36,
+            "quality": 0.916667,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            36,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 36,
+            "quality": 0.966667,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            151,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 151,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            186,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 186,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            146,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 146,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            76,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 76,
+            "quality": 0.928571,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            91,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 91,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            181,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 181,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            156,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 156,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            26,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 26,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            166,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 166,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            61,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 61,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            16,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 16,
+            "quality": 0.966667,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            161,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 161,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            126,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 126,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            166,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 166,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            181,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 181,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            96,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 96,
+            "quality": 0.9,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            171,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 171,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            71,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 71,
+            "quality": 0.9375,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            71,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 71,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            151,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 151,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            191,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 191,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            11,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 11,
+            "quality": 0.990385,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            171,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 171,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            126,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 126,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            86,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 86,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            106,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 106,
+            "quality": 0.9,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            121,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 121,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            121,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 121,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            136,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 136,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            16,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 16,
+            "quality": 0.986486,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            126,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 126,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            56,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 56,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            116,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 116,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            111,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 111,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            21,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 21,
+            "quality": 0.982143,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            196,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 196,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            66,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 66,
+            "quality": 0.9375,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            86,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 86,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            146,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 146,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            166,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 166,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            181,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 181,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            141,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 141,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            76,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 76,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            116,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 116,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            111,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 111,
+            "quality": 0.9,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            146,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 146,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            136,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 136,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            111,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 111,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            161,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 161,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            61,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 61,
+            "quality": 0.944444,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            176,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 176,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            51,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 51,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            51,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 51,
+            "quality": 0.954545,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            36,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 36,
+            "quality": 0.96875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            131,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 131,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            176,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 176,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            91,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 91,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            46,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 46,
+            "quality": 0.9,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            21,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 21,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            61,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 61,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            136,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 136,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            86,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 86,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            121,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 121,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            126,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 126,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            141,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 141,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            56,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 56,
+            "quality": 0.95,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            131,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 131,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            31,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 31,
+            "quality": 0.972222,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            91,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 91,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            106,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 106,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            116,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 116,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            111,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 111,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            76,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 76,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            46,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 46,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            66,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 66,
+            "quality": 0.944444,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            81,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 81,
+            "quality": 0.928571,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            121,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 121,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            196,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 196,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            106,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 106,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            161,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 161,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            86,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 86,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            146,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 146,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            16,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 16,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            116,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 116,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            121,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 121,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            71,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 71,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/",
+            191,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 191,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/head/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            91,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 91,
+            "quality": 0.916667,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            31,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 31,
+            "quality": 0.9375,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            156,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 156,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            171,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 171,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            171,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 171,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            191,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 191,
+            "quality": 0.833333,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            101,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 101,
+            "quality": 0.75,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            106,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 106,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            166,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 166,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            141,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 141,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            181,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 181,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/",
+            61,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 61,
+            "quality": 0.875,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/birdhouse/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/",
+            26,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 26,
+            "quality": 0.977273,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/monkey5/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/",
+            76,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 76,
+            "quality": NaN,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple2/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            96,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 96,
+            "quality": 0.916667,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/",
+            151,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 151,
+            "quality": 0.5,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/marple17/"
+        }
+    },
+    {
+        "parameters": [
+            "asift",
+            "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/",
+            71,
+            -1,
+            -1
+        ],
+        "result": {
+            "step": 71,
+            "quality": 0.9375,
+            "folder": "/home/gwachs/qsift/RunningExperiment/ImageSequences/shoe/"
+        }
     }
 ]

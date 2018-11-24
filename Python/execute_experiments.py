@@ -39,7 +39,7 @@ def execute(fout, func, parameters):
 
     done = [tuple(i["parameters"]) for i in x]
 
-    proc = mp.Pool(2)
+    proc = mp.Pool(4)
 
     runs = x
     parameters = list(parameters)

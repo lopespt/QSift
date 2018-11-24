@@ -43,7 +43,6 @@ def qsift(*args, **kwargs):
     
     p = subprocess.Popen(
         [
-            "optirun",
             "../CPP/qsift/build/OrdenacaoSift2",
             pasta_imagens,
             str(q_val),
@@ -83,7 +82,6 @@ def surf(pasta_imagens, hessian_thr, steps=1, start=-1, end=-1):
 
     p = subprocess.Popen(
         [
-            "optirun",
             "../CPP/SURF/build/OrdenacaoSurf",
             pasta_imagens,
             str(hessian_thr),
@@ -122,7 +120,6 @@ def asift(*args, **kwargs):
 
     p = subprocess.Popen(
         [
-            "optirun",
             "../CPP/asift/build/OrdenacaoASift", 
             pasta_imagens, 
             *start, 
