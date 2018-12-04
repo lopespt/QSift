@@ -80,6 +80,8 @@ def surf(pasta_imagens, hessian_thr, steps=1, start=-1, end=-1):
     end = ["--to", str(end)] if end != -1 else []
     steps = ["--step", str(steps)] if steps != -1 else []
 
+    print(",".join([ "../CPP/SURF/build/OrdenacaoSurf", pasta_imagens, str(hessian_thr), *start, *end, *steps, ]))
+
     p = subprocess.Popen(
         [
             "../CPP/SURF/build/OrdenacaoSurf",

@@ -27,7 +27,7 @@ set(SOURCE_FILES
 
 file(GLOB_RECURSE SRC_UTILITIES src/*.cpp)
 add_library(utilities ${SRC_UTILITIES})
-target_link_libraries(utilities ${OpenCV_LIBRARIES} ${OpenCL_LIBRARIES})
+target_link_libraries(utilities PUBLIC ${OpenCV_LIBRARIES} ${OpenCL_LIBRARIES})
 
 
 SET(EXP_SRC Experimentos/)

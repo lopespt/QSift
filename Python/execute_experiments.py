@@ -57,6 +57,7 @@ def execute(fout, func, parameters):
             proc.apply_async(runner, (func, x), callback=callback)
         else:
             tq.update(1)
+        tq.refresh()
 
     proc.close()
     proc.join()
@@ -120,8 +121,8 @@ def arange(start, end, step):
 
 # execute_qsift_experiments(pastas, [0.5], [0.5], [2], arquivos)
 
-# execute_surf_experiments(pastas, arange(100, 300, 50), arange(1, 200, 5),
-#                          "surf.json")
+execute_surf_experiments(pastas, arange(1, 300, 50), arange(1, 200, 5),
+                        "surf.json")
 
 # execute_surf_experiments()
-execute_asift_experiments(pastas, arange(1, 200, 5), "asift.json")
+#execute_asift_experiments(pastas, arange(1, 200, 5), "asift.json")

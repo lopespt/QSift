@@ -57,6 +57,7 @@ vector<int> geraAleatorio(const int &start, const int &end, const int &step) {
 vector<FrameInfo> createVectorSpace(const char * const source, const unsigned int &sFrame,
                                     const unsigned int &eFrame, const unsigned int &step,
                                     const float &h = 200) {
+    cout << source << endl;
     VideoSurf video(source, sFrame, eFrame);
     vector<int> v = geraAleatorio(sFrame, eFrame, step);
     QVector<int> order = QVector<int>::fromStdVector(v);
@@ -181,7 +182,7 @@ tuple<int,int, QString> discoverFramesInFolder(QString folder){
     QFileInfo ff(folder);
     QFileInfoList imageFiles = ff.dir().entryInfoList();
     QVector<int> indexes;
-    QRegularExpression re("-(\\d*)\\.\\w*$");
+    QRegularExpression re("[_-]*(\\d*)\\.\\w*$");
     QString basename;
     for(auto fi : imageFiles){
         QRegularExpressionMatch m = re.match(fi.fileName());
@@ -220,6 +221,7 @@ int main(int argc, char * argv[]){
     int from, to, step=1;
     QString basename;
     tie(from, to, basename) = discoverFramesInFolder(parser.positionalArguments().value(0));
+    cout << basename.toStdString() << endl;
     basename = parser.positionalArguments().value(0) + basename;
 
     if(parser.isSet("from"))
