@@ -1,3 +1,9 @@
+*.png
+.clang_complete
+*.json
+*.zip
+RunningExperiment
+gmon.out
 build
 # Compiled Object files
 *.slo
@@ -12,3 +18,5 @@ build
 *.lai
 *.la
 *.a
+
+
