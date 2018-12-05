@@ -1,0 +1,3 @@
+/home/lopespt/tmp/qsift/CPP/asift/src/io_png/CMakeFiles/CMakeTmp/CMakeFiles/rebuild_cache.dir
+/home/lopespt/tmp/qsift/CPP/asift/src/io_png/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_af6b5.dir
+/home/lopespt/tmp/qsift/CPP/asift/src/io_png/CMakeFiles/CMakeTmp/CMakeFiles/edit_cache.dir

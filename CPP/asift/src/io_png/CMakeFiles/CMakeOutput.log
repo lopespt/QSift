@@ -1,0 +1,45 @@
+The system is: Linux - 4.19.2-arch1-1-ARCH - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/lopespt/.vim/bin/cc_args_gcc.sh 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced ".clang_complete"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/lopespt/tmp/qsift/CPP/asift/src/io_png/CMakeFiles/3.12.4/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/lopespt/.vim/bin/cc_args_g++.sh 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced ".clang_complete"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/lopespt/tmp/qsift/CPP/asift/src/io_png/CMakeFiles/3.12.4/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/lopespt/tmp/qsift/CPP/asift/src/io_png/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7b7ab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7b7ab.dir/build.make CMakeFiles/cmTC_7b7ab.dir/build
+make[1]: Entering directory '/home/lopespt/tmp/qsift/CPP/asift/src/io_png/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7b7ab.dir/testCCompiler.c.o
+/home/lopespt/.vim/bin/cc_args_gcc.sh    -o CMakeFiles/cmTC_7b7ab.dir/testCCompiler.c.o   -c /home/lopespt/tmp/qsift/CPP/asift/src/io_png/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_7b7ab
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b7ab.dir/link.txt --verbose=1
+/home/lopespt/.vim/bin/cc_args_gcc.sh      -rdynamic CMakeFiles/cmTC_7b7ab.dir/testCCompiler.c.o  -o cmTC_7b7ab 
+make[1]: Leaving directory '/home/lopespt/tmp/qsift/CPP/asift/src/io_png/CMakeFiles/CMakeTmp'
+
+

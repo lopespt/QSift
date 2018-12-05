@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lopespt/tmp/qsift/CPP/asift/src/libMatch/match.cpp
+match.h
+/home/lopespt/tmp/qsift/CPP/asift/src/libMatch/match.h
+fstream
+-
+sstream
+-
+
+/home/lopespt/tmp/qsift/CPP/asift/src/libMatch/match.h
+vector
+-
+

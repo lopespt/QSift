@@ -11,7 +11,7 @@ from pathlib import Path
 import numpy as np
 import tqdm
 
-from experiments import asift, qsift, surf
+from experiments import asift, qsift, surf, qasift
 
 
 def star(func, args):
@@ -62,6 +62,13 @@ def execute(fout, func, parameters):
     proc.close()
     proc.join()
     tq.close()
+
+
+def execute_qasift_experiments(folders, q, b, steps, outfile):
+    # Para cada pasta, rodar o experimento com todas as variações considerando todo o vídeo
+    parameters = list(itertools.product(folders, q, b, steps, [-1], [-1]))
+    parameters = list(set(parameters))
+    execute(outfile, qasift, parameters)
 
 
 def execute_asift_experiments(folders, steps, outfile):
@@ -117,12 +124,16 @@ def arange(start, end, step):
 
 
 # execute_qsift_experiments(pastas, arange(0.2, 1.8, 0.2), arange(0.2, 2, 0.4),
-                          # arange(1, 200, 5), "qsift.json")
+# arange(1, 200, 5), "qsift.json")
 
 # execute_qsift_experiments(pastas, [0.5], [0.5], [2], arquivos)
 
-execute_surf_experiments(pastas, arange(1, 300, 50), arange(1, 200, 5),
-                        "surf.json")
+# execute_surf_experiments(pastas, arange(1, 300, 50), arange(1, 200, 5),
+#                         "surf.json")
 
 # execute_surf_experiments()
-#execute_asift_experiments(pastas, arange(1, 200, 5), "asift.json")
+# execute_asift_experiments(pastas, arange(1, 200, 5), "asift.json")
+
+execute_qasift_experiments(pastas, arange(0.2, 1.8,
+                                          0.2), [0.5, 1, 1.5, 2, 2.5],
+                           arange(1, 200, 5), "qasift.json")

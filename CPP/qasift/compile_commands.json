@@ -1,0 +1,157 @@
+[
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Iutilities_autogen/include -I../src -I../include -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/lib/qt/mkspecs/linux-g++ -I/usr/include/qt/QtConcurrent -isystem /usr/local/include -isystem /usr/local/include/opencv    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -g   -o CMakeFiles/utilities.dir/src2/VideoAsift.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src2/VideoAsift.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src2/VideoAsift.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Iutilities_autogen/include -I../src -I../include -I/usr/include/qt -I/usr/include/qt/QtCore -I/usr/lib/qt/mkspecs/linux-g++ -I/usr/include/qt/QtConcurrent -isystem /usr/local/include -isystem /usr/local/include/opencv    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -g   -o CMakeFiles/utilities.dir/utilities_autogen/mocs_compilation.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/build/utilities_autogen/mocs_compilation.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/build/utilities_autogen/mocs_compilation.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++  -DQT_CONCURRENT_LIB -DQT_CORE_LIB -IOrdenacaoASift_autogen/include -I../src -I../include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtConcurrent -isystem /usr/local/include -isystem /usr/local/include/opencv    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -g   -fPIC -std=gnu++11 -o CMakeFiles/OrdenacaoASift.dir/Experimentos/OrdenacaoASift/main.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/Experimentos/OrdenacaoASift/main.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/Experimentos/OrdenacaoASift/main.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++  -DQT_CONCURRENT_LIB -DQT_CORE_LIB -IOrdenacaoASift_autogen/include -I../src -I../include -isystem /usr/include/qt -isystem /usr/include/qt/QtCore -isystem /usr/lib/qt/mkspecs/linux-g++ -isystem /usr/include/qt/QtConcurrent -isystem /usr/local/include -isystem /usr/local/include/opencv    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -g   -fPIC -std=gnu++11 -o CMakeFiles/OrdenacaoASift.dir/OrdenacaoASift_autogen/mocs_compilation.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/build/OrdenacaoASift_autogen/mocs_compilation.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/build/OrdenacaoASift_autogen/mocs_compilation.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/asift_autogen/include -I../src/.    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -fopenmp -Wall -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ansi -O3 -ftree-vectorize -funroll-loops -g   -o src/CMakeFiles/asift.dir/numerics1.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/numerics1.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/numerics1.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/asift_autogen/include -I../src/.    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -fopenmp -Wall -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ansi -O3 -ftree-vectorize -funroll-loops -g   -o src/CMakeFiles/asift.dir/frot.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/frot.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/frot.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/asift_autogen/include -I../src/.    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -fopenmp -Wall -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ansi -O3 -ftree-vectorize -funroll-loops -g   -o src/CMakeFiles/asift.dir/splines.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/splines.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/splines.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/asift_autogen/include -I../src/.    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -fopenmp -Wall -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ansi -O3 -ftree-vectorize -funroll-loops -g   -o src/CMakeFiles/asift.dir/fproj.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/fproj.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/fproj.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/asift_autogen/include -I../src/.    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -fopenmp -Wall -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ansi -O3 -ftree-vectorize -funroll-loops -g   -o src/CMakeFiles/asift.dir/library.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/library.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/library.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/asift_autogen/include -I../src/.    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -fopenmp -Wall -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ansi -O3 -ftree-vectorize -funroll-loops -g   -o src/CMakeFiles/asift.dir/flimage.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/flimage.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/flimage.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/asift_autogen/include -I../src/.    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -fopenmp -Wall -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ansi -O3 -ftree-vectorize -funroll-loops -g   -o src/CMakeFiles/asift.dir/filter.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/filter.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/filter.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/asift_autogen/include -I../src/.    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -fopenmp -Wall -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ansi -O3 -ftree-vectorize -funroll-loops -g   -o src/CMakeFiles/asift.dir/compute_asift_keypoints.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/compute_asift_keypoints.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/compute_asift_keypoints.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/asift_autogen/include -I../src/.    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -fopenmp -Wall -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ansi -O3 -ftree-vectorize -funroll-loops -g   -o src/CMakeFiles/asift.dir/compute_asift_matches.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/compute_asift_matches.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/compute_asift_matches.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/asift_autogen/include -I../src/.    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -fopenmp -Wall -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ansi -O3 -ftree-vectorize -funroll-loops -g   -o src/CMakeFiles/asift.dir/orsa.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/orsa.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/orsa.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/asift_autogen/include -I../src/.    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -fopenmp -Wall -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ansi -O3 -ftree-vectorize -funroll-loops -g   -o src/CMakeFiles/asift.dir/demo_lib_sift.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/demo_lib_sift.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/demo_lib_sift.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/gcc  -Isrc/asift_autogen/include -I../src/.  -g   -o src/CMakeFiles/asift.dir/io_png/io_png.c.o   -c /home/lopespt/tmp/qsift/CPP/asift/src/io_png/io_png.c",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/io_png/io_png.c"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/asift_autogen/include -I../src/.    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -fopenmp -Wall -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ansi -O3 -ftree-vectorize -funroll-loops -g   -o src/CMakeFiles/asift.dir/asift_autogen/mocs_compilation.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/build/src/asift_autogen/mocs_compilation.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/build/src/asift_autogen/mocs_compilation.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/libMatch/Match_autogen/include    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -g   -o src/libMatch/CMakeFiles/Match.dir/match.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/libMatch/match.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/libMatch/match.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/libMatch/Match_autogen/include    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -g   -o src/libMatch/CMakeFiles/Match.dir/Match_autogen/mocs_compilation.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/build/src/libMatch/Match_autogen/mocs_compilation.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/build/src/libMatch/Match_autogen/mocs_compilation.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/libNumerics/Numerics_autogen/include -I../src/libNumerics/..    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -g   -o src/libNumerics/CMakeFiles/Numerics.dir/computeH.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/libNumerics/computeH.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/libNumerics/computeH.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/libNumerics/Numerics_autogen/include -I../src/libNumerics/..    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -g   -o src/libNumerics/CMakeFiles/Numerics.dir/homography.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/libNumerics/homography.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/libNumerics/homography.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/libNumerics/Numerics_autogen/include -I../src/libNumerics/..    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -g   -o src/libNumerics/CMakeFiles/Numerics.dir/matrix.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/libNumerics/matrix.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/libNumerics/matrix.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/libNumerics/Numerics_autogen/include -I../src/libNumerics/..    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -g   -o src/libNumerics/CMakeFiles/Numerics.dir/numerics.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/libNumerics/numerics.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/libNumerics/numerics.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/libNumerics/Numerics_autogen/include -I../src/libNumerics/..    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -g   -o src/libNumerics/CMakeFiles/Numerics.dir/rodrigues.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/libNumerics/rodrigues.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/libNumerics/rodrigues.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/libNumerics/Numerics_autogen/include -I../src/libNumerics/..    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -g   -o src/libNumerics/CMakeFiles/Numerics.dir/vector.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/src/libNumerics/vector.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/src/libNumerics/vector.cpp"
+},
+
+{
+  "directory": "/home/lopespt/tmp/qsift/CPP/asift/build",
+  "command": "/usr/bin/g++   -Isrc/libNumerics/Numerics_autogen/include -I../src/libNumerics/..    -std=c++17 -fopenmp  -Wno-strict-aliasing -Wextra -Wno-write-strings -Wno-deprecated -ftree-vectorize -funroll-loops -O3 -g   -o src/libNumerics/CMakeFiles/Numerics.dir/Numerics_autogen/mocs_compilation.cpp.o -c /home/lopespt/tmp/qsift/CPP/asift/build/src/libNumerics/Numerics_autogen/mocs_compilation.cpp",
+  "file": "/home/lopespt/tmp/qsift/CPP/asift/build/src/libNumerics/Numerics_autogen/mocs_compilation.cpp"
+}
+]

@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.html": "html",
+        "memory": "cpp",
+        "string": "cpp",
+        "sstream": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "iosfwd": "cpp"
+    }
+}

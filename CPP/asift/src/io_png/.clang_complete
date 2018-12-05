@@ -1,0 +1,7 @@
+-I/home/lopespt/tmp/qsift/CPP/asift/src/.
+-Wall
+-Wno-strict-aliasing
+-Wextra
+-Wno-write-strings
+-Wno-deprecated
+-ansi

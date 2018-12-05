@@ -6,13 +6,16 @@ import os
 import subprocess
 import sys
 from pathlib import Path
-
 import tqdm
 
 
 def extract_frames(video, start, end, dest_folder):
     p = subprocess.Popen(
-        ["../CPP/qsift/build/Conversor", video, str(start), str(end), dest_folder],
+        [
+            "../CPP/qsift/build/Conversor", video,
+            str(start),
+            str(end), dest_folder
+        ],
         stdout=subprocess.PIPE,
     )
     # out = p.communicate()[0]
@@ -23,13 +26,55 @@ def extract_frames(video, start, end, dest_folder):
         print(x.decode("utf-8", end=""))
 
 
+
+def qasift(*args, **kwargs):
+    pasta_imagens, q_val, b_val, steps, start, end = args
+
+    # print("qsift(q_val: %s, b_val %s, steps, %s)" % (float(q_val), float(b_val), int(steps)))
+
+    def parse_qasift_output(saida, ):
+        d = dict(
+            zip(["step", "quality"], saida.split()))
+        d["step"] = int(d["step"])
+        d["quality"] = float(d["quality"])
+        return d
+
+    sstart = ["--from", str(start)] if start != -1 else []
+    send = ["--to", str(end)] if end != -1 else []
+    ssteps = ["--step", str(steps)] if steps != -1 else []
+
+    p = subprocess.Popen(
+        [
+            "../CPP/qasift/build/OrdenacaoQASift",
+            pasta_imagens,
+            str(q_val),
+            str(b_val),
+            *sstart,
+            *send,
+            *ssteps,
+        ],
+        stdout=subprocess.PIPE,
+    )
+    saida = ""
+    while True:
+        x = p.stdout.readline()
+        if b"" == x:
+            break
+        x = x.decode("utf-8")
+        x = x.replace("\n", "").replace("\r", "")
+        x = x.replace(",", ".")
+        saida += x
+    return parse_qasift_output(saida)
+
+
 def qsift(*args, **kwargs):
     pasta_imagens, q_val, b_val, steps, start, end = args
 
     # print("qsift(q_val: %s, b_val %s, steps, %s)" % (float(q_val), float(b_val), int(steps)))
 
-    def parse_qsift_output(saida,):
-        d = dict(zip(["q", "b", "step", "zero_features", "quality"], saida.split()))
+    def parse_qsift_output(saida, ):
+        d = dict(
+            zip(["q", "b", "step", "zero_features", "quality"], saida.split()))
         d["q"] = float(d["q"])
         d["b"] = float(d["b"])
         d["step"] = int(d["step"])
@@ -40,7 +85,7 @@ def qsift(*args, **kwargs):
     sstart = ["--from", str(start)] if start != -1 else []
     send = ["--to", str(end)] if end != -1 else []
     ssteps = ["--step", str(steps)] if steps != -1 else []
-    
+
     p = subprocess.Popen(
         [
             "../CPP/qsift/build/OrdenacaoSift2",
@@ -80,7 +125,14 @@ def surf(pasta_imagens, hessian_thr, steps=1, start=-1, end=-1):
     end = ["--to", str(end)] if end != -1 else []
     steps = ["--step", str(steps)] if steps != -1 else []
 
-    print(",".join([ "../CPP/SURF/build/OrdenacaoSurf", pasta_imagens, str(hessian_thr), *start, *end, *steps, ]))
+    print(",".join([
+        "../CPP/SURF/build/OrdenacaoSurf",
+        pasta_imagens,
+        str(hessian_thr),
+        *start,
+        *end,
+        *steps,
+    ]))
 
     p = subprocess.Popen(
         [
@@ -107,6 +159,7 @@ def surf(pasta_imagens, hessian_thr, steps=1, start=-1, end=-1):
 
 def asift(*args, **kwargs):
     pasta_imagens, steps, start, end = args
+
     # print("qsift(q_val: %s, b_val %s, steps, %s)" % (float(q_val), float(b_val), int(steps)))
 
     def parse_asift_output(saida):
@@ -122,11 +175,9 @@ def asift(*args, **kwargs):
 
     p = subprocess.Popen(
         [
-            "../CPP/asift/build/OrdenacaoASift", 
-            pasta_imagens, 
-            *start, 
-            *end, 
-            *steps],
+            "../CPP/asift/build/OrdenacaoASift", pasta_imagens, *start, *end,
+            *steps
+        ],
         stdout=subprocess.PIPE,
     )
     saida = ""

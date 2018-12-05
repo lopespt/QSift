@@ -1,0 +1,1 @@
+/home/lopespt/.vim/bin/cc_args_gcc.sh     -v -rdynamic CMakeFiles/cmTC_af6b5.dir/CMakeCCompilerABI.c.o  -o cmTC_af6b5 
