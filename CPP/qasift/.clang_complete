@@ -21,3 +21,4 @@
 -isystem/usr/lib/qt/mkspecs/linux-g++
 -isystem/usr/include/qt/QtConcurrent
 -std=gnu++11
+-Wl,-rpath,/usr/local/lib64

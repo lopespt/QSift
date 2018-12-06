@@ -92,7 +92,7 @@ VideoQASift::VideoQASift(string basename, const unsigned int &from,
 
 FrameInfo VideoQASift::extractQASiftFeaturesMemoized(const unsigned int &frameNum){
   stringstream ss;
-  ss << basename << frameNum << ".asift";
+  ss << basename << frameNum << "_" << q << "_" << b << ".qasift";
   
   FrameInfo ret;
   ifstream ifs(ss.str(), ios_base::binary);
@@ -139,7 +139,7 @@ FrameInfo VideoQASift::extractQASiftFeatures(const unsigned int &frameNum) {
 
   //Memoiza os keypoints
   stringstream ss;
-  ss << basename << frameNum << ".asift";
+  ss << basename << frameNum << "_" << q << "_" << b << ".qasift";
   ofstream ofs(ss.str(), ios_base::binary);
   boost::archive::binary_oarchive saida(ofs);
   saida << ret;

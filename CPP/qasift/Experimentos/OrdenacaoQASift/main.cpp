@@ -12,6 +12,8 @@
 #include <random>
 #include <tuple>
 
+using namespace std;
+
 struct ExperimentFrame {
   int num;
   FrameInfo features;
