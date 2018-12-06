@@ -47,7 +47,7 @@ tuple<int, int, QString> discoverFramesInFolder(QString folder) {
   QFileInfo ff(folder);
   QFileInfoList imageFiles = ff.dir().entryInfoList();
   QVector<int> indexes;
-  QRegularExpression re("[-_](\\d*)\\.\\w*$");
+  QRegularExpression re("[-_](\\d*)\\.png*$");
   QString basename;
   for (auto fi : imageFiles) {
     QRegularExpressionMatch m = re.match(fi.fileName());
