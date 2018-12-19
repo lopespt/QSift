@@ -127,7 +127,6 @@ FrameInfo VideoQASift::extractQASiftFeatures(const unsigned int &frameNum) {
   cv::cvtColor(frame, frame, cv::COLOR_BGR2GRAY);
   frame.convertTo(frame, CV_32FC1);
   image.create(frame.cols, frame.rows, (float *)frame.data);
-
   vector<float> fimage((float *)frame.data, (float *)frame.dataend);
   ret.h = frame.rows;
   ret.w = frame.cols;
@@ -143,6 +142,7 @@ FrameInfo VideoQASift::extractQASiftFeatures(const unsigned int &frameNum) {
   ofstream ofs(ss.str(), ios_base::binary);
   boost::archive::binary_oarchive saida(ofs);
   saida << ret;
+  image.erase();
 
   return ret;
 }
