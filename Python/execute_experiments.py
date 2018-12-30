@@ -7,6 +7,7 @@ import json
 import multiprocessing as mp
 import os
 from pathlib import Path
+import sys
 
 import numpy as np
 import tqdm
@@ -109,7 +110,7 @@ def execute_surf_experiments(folders, hessian, steps, outfile):
 
 pastas = [
     str(Path(a).resolve()) + "/"
-    for (a, _, c) in os.walk("../RunningExperiment/", followlinks=True)
+    for (a, _, c) in os.walk("../RunningExperiment/ImageSequences/", followlinks=True)
     if len(c) > 0
 ]
 
@@ -132,8 +133,8 @@ def arange(start, end, step):
 #                         "surf.json")
 
 # execute_surf_experiments()
-# execute_asift_experiments(pastas, arange(1, 200, 5), "asift.json")
+#execute_asift_experiments(pastas, arange(1, 200, 5), "asift.json")
 
-execute_qasift_experiments(pastas, arange(0.2, 1.8,
-                                          0.2), [0.5, 1, 1.5, 2, 2.5],
+execute_qasift_experiments(pastas, np.setdiff1d(arange(0.2, 1.8, 0.2), [1]),
+                           [0.5, 1, 1.5, 2, 2.5],
                            arange(1, 200, 5), "qasift.json")
