@@ -29,6 +29,9 @@ void fast_separable_convolution(float *u, float *v, int width, int height,float 
 void gaussian_convolution(float *u, float *v, int width, int height, float sigma);
 void gaussian_convolution(float *u, float *v, int width, int height, float sigma, int ksize);
 
+
+void qgaussian_convolution(float *u, float *v, int width, int height, float sigma, float q, float b);
+
 void convol(float *u, float *v, int width, int height, float *kernel, int kwidth, int kheight);    /// Convolution with a kernel,  No padding applied to the image
 
 void heat(float *u, float *v, float step, int niter, float sigma, int width, int height);

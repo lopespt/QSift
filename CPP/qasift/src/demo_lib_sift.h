@@ -290,6 +290,7 @@ float qGaussianB;
 void default_sift_parameters(siftPar &par);
 
 void compute_sift_keypoints(float *input,  keypointslist& keypoints,int width, int height, siftPar &par);
+void compute_qsift_keypoints(float *input,  keypointslist& keypoints,int width, int height, siftPar &par);
 
 
 

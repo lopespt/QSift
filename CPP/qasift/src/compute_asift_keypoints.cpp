@@ -193,37 +193,37 @@ void ConvVertical(vector<float>& image, int width, int height, float *kernel, in
 
 
 
-//Guilherme
-double qGaussian(double x, double q, double b = -1) {
-    assert(q < 3);
-    double cq;
-    double eq;
-    if ( b <= 0 )
-      b = 1;
-
-    double baseEq = 1 + ((1 - q) * ((-b) * x * x));
-    if (q < 1) {
-        cq = (2 * sqrt(M_PI) * tgamma(1. / (1 - q)));
-        cq /= (3 - q) * sqrt(1 - q) * tgamma((3 - q) / (2. - 2. * q));
-        eq = pow(baseEq, 1. / (1. - q));
-    } else if (q > 1) {
-        cq = sqrt(M_PI) * tgamma((3 - q) / (2. * q - 2.));
-        cq /= sqrt(q - 1) * tgamma(1. / (q - 1));
-        eq = pow(baseEq, 1. / (1. - q));
-    } else {
-        //q == 1;
-        cq = sqrt(M_PI);
-        eq = exp(-b * x * x);
-    }
-    double res = sqrt(b) / cq * eq;
-    return res < 0 || baseEq <= 0 ? 0 : res;
-}
-
-
-//Guilherme
-double qGaussianDesvio(double x, double s, double q, double b = -1){
-  return qGaussian(x,q,b) * exp( ((-1 + s*s) * x*x)/(2. * s*s))/s;
-}
+////Guilherme
+//double qGaussian(double x, double q, double b = -1) {
+//    assert(q < 3);
+//    double cq;
+//    double eq;
+//    if ( b <= 0 )
+//      b = 1;
+//
+//    double baseEq = 1 + ((1 - q) * ((-b) * x * x));
+//    if (q < 1) {
+//        cq = (2 * sqrt(M_PI) * tgamma(1. / (1 - q)));
+//        cq /= (3 - q) * sqrt(1 - q) * tgamma((3 - q) / (2. - 2. * q));
+//        eq = pow(baseEq, 1. / (1. - q));
+//    } else if (q > 1) {
+//        cq = sqrt(M_PI) * tgamma((3 - q) / (2. * q - 2.));
+//        cq /= sqrt(q - 1) * tgamma(1. / (q - 1));
+//        eq = pow(baseEq, 1. / (1. - q));
+//    } else {
+//        //q == 1;
+//        cq = sqrt(M_PI);
+//        eq = exp(-b * x * x);
+//    }
+//    double res = sqrt(b) / cq * eq;
+//    return res < 0 || baseEq <= 0 ? 0 : res;
+//}
+//
+//
+////Guilherme
+//double qGaussianDesvio(double x, double s, double q, double b = -1){
+//  return qGaussian(x,q,b) * exp( ((-1 + s*s) * x*x)/(2. * s*s))/s;
+//}
 
 /* 1D Convolve image with a Gaussian of width sigma and store result back
 in image.   This routine creates the Gaussian kernel, and then applies
@@ -431,7 +431,7 @@ int compute_qasift_keypoints(vector<float>& image, int width, int height, int nu
       for (int cc = 0; cc < width*height; cc++)
         image_tmp1_float[cc] = image_tmp1[cc];
 
-      compute_sift_keypoints(image_tmp1_float,keys_all[tt-1][0],width,height,siftparameters);
+      compute_qsift_keypoints(image_tmp1_float,keys_all[tt-1][0],width,height,siftparameters);
 
       delete[] image_tmp1_float;
 
