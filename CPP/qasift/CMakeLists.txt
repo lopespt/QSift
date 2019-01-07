@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.2.2) # CMake version check
 project(simple_example )               # Create project "simple_example"
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17") # Enable c++11 standard
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -O3") # Enable c++11 standard
 message(STATUS ${CMAKE_CXX_COMPILER})
 
 FIND_PACKAGE(Qt5Core)

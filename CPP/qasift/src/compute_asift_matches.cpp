@@ -187,7 +187,7 @@ void clean_match1(matchingslist &seg_in, matchingslist &seg_out, vector< vector 
     }
   else
     {
-      printf("Warning: all matches are redundant and are thus removed! This step of match cleaning is short circuited. (Normally this should not happen...)\n");
+      //printf("Warning: all matches are redundant and are thus removed! This step of match cleaning is short circuited. (Normally this should not happen...)\n");
     }
 
 	// Guoshen Yu, 2010.09.22, Windows version
@@ -266,7 +266,7 @@ void clean_match2(matchingslist &seg_in, matchingslist &seg_out, vector< vector 
   }
   else
   {
-      printf("Warning: all matches are redundant and are thus removed! This step of match cleaning is short circuited. (Normally this should not happen...)\n");
+      //printf("Warning: all matches are redundant and are thus removed! This step of match cleaning is short circuited. (Normally this should not happen...)\n");
   }
 
   // Guoshen Yu, 2010.09.22, Windows version

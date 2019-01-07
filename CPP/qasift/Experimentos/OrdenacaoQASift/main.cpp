@@ -11,6 +11,7 @@
 #include <functional>
 #include <random>
 #include <tuple>
+#include <iostream>
 
 using namespace std;
 
@@ -70,12 +71,14 @@ float avalia(vector<int> result) {
   return (res + float(result.size() - 1)) / (2.0 * float(result.size()) - 2.0);
 }
 
-void runExperiment(QString folder, float q, float b, int from = 0, int to = 0, int step = 1) {
+void runExperiment(QString folder, float q, float b, int from = 0, int to = 0,
+                   int step = 1) {
   int foundFrom;
   int foundTo;
   QString pattern;
 
   tie(foundFrom, foundTo, pattern) = discoverFramesInFolder(folder);
+  cerr << "from: " << foundFrom << "to: " << foundTo << endl;
 
   QStringList sl = folder.split("/");
   sl.removeLast();
