@@ -250,7 +250,7 @@ void qgaussian_convolution(float *u, float *v, int width, int height, float sigm
 	float * kernel;
 
 	ksize = (int)(4.0 * 4.0 * sigma + 1.0);
-  kernel = qgauss(1,sigma,&ksize,q,b);
+  kernel = qgauss(1,sigma*q,&ksize,q,b);
 
 	int boundary = 1;
 
