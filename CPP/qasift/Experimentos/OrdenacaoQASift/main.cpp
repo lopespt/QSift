@@ -126,7 +126,7 @@ void runExperiment(QString folder, float q, float b, int from = 0, int to = 0,
 
 int main(int argc, char **argv) {
   QCoreApplication app(argc, argv);
-
+  
   QCommandLineParser parser;
   parser.addHelpOption();
   parser.addPositionalArgument("folder", "Images Folder");
@@ -144,10 +144,12 @@ int main(int argc, char **argv) {
   int from = parser.isSet("f") ? parser.value("f").toInt() : 0;
   int to = parser.isSet("t") ? parser.value("t").toInt() : 0;
   int step = parser.isSet("s") ? parser.value("s").toInt() : 1;
+  
   float q = parser.positionalArguments().value(1).toFloat();
   float b = parser.positionalArguments().value(2).toFloat();
 
   runExperiment(parser.positionalArguments().value(0), q, b, from, to, step);
+  
   // printf("Checkpoint %d\n", 1);
   /*
      float q = parser.positionalArguments().value(1).toFloat();

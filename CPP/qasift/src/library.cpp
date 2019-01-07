@@ -192,6 +192,81 @@ void binarize(float *u, float *v,float value, int inverse, int size)
 
 
 
+//Guilherme
+double qGaussian(double x, double q, double b = -1) {
+    // assert(q < 3);
+    double cq;
+    double eq;
+    if ( b <= 0 )
+      b = 1;
+
+    double baseEq = 1 + ((1 - q) * ((-b) * x * x));
+    if (q < 1) {
+        cq = (2 * sqrt(M_PI) * tgamma(1. / (1 - q)));
+        cq /= (3 - q) * sqrt(1 - q) * tgamma((3 - q) / (2. - 2. * q));
+        eq = pow(baseEq, 1. / (1. - q));
+    } else if (q > 1) {
+        cq = sqrt(M_PI) * tgamma((3 - q) / (2. * q - 2.));
+        cq /= sqrt(q - 1) * tgamma(1. / (q - 1));
+        eq = pow(baseEq, 1. / (1. - q));
+    } else {
+        //q == 1;
+        cq = sqrt(M_PI);
+        eq = exp(-b * x * x);
+    }
+    double res = sqrt(b) / cq * eq;
+    return res < 0 || baseEq <= 0 ? 0 : res;
+}
+
+
+//Guilherme
+double qGaussianDesvio(double x, double s, double q, double b ){
+  return qGaussian(x,q,b) * exp( ((-1 + s*s) * x*x)/(2. * s*s))/s;
+}
+
+float *  qgauss(int sflag,float std,int *size,float q, float b)
+{
+
+   float *u,prec = 4.0,shift;
+   double v;
+//   int n,i,flag;
+   int n,i;
+   int flag = 1; //Guoshen Yu
+
+
+   if (sflag) n=*size;
+   else
+	n = 1+2*(int)ceil((double)std*sqrt(prec*2.*log(10.)));   
+   
+   u =new float[n];
+
+   if (n==1) 
+    u[0]=1.0;
+   else{
+
+      shift = 0.5*(float)(n-1);
+
+      for (i=(n+1)/2;i--;) {
+        // v = ((double)i - (double) shift)/(double)std;
+         u[i] = u[n-1-i] = (float) qGaussianDesvio((double)i - (double)shift,std, q, b);
+      }
+   }	
+
+//   if (flag = normalize(u,n)) {
+	if (flag == normalize(u,n)) 
+	{
+		*size=n;
+        return u;
+    } 
+	else 
+	{
+		printf("ERROR: _gauss: _normalize: normalization equals zero.\n");
+		delete[] u; /*memcheck*/
+		return 0; // Guoshen Yu
+    }
+}
+
+
 float *  gauss(int sflag,float std,int *size)
 {
 

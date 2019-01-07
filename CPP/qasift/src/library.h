@@ -92,6 +92,10 @@ float *  gauss(int sflag,float std,int *size);  	/// Create a 1d gauss kernel of
 
 // void addnoise(float *u,float *v,float std,long int randinit, int size);    
 // void addnoise_var_afine(float *u,float *v,float a,float b,long int randinit, int size);    
+//
+
+float *  qgauss(int sflag,float std,int *size,float q, float b);
+double qGaussianDesvio(double x, double s, double q, double b = -1);
 
 
 void quick_sort(float *arr,float *brr,int n);  		/// Quicksort

@@ -68,6 +68,8 @@ void default_sift_parameters(siftPar &par) {
 /// SIFT Keypoint detection
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void QOctaveKeypoints(flimage &image, float octSize, keypointslist &keys,
+                     siftPar &par);
 
 void OctaveKeypoints(flimage &image, float octSize, keypointslist &keys,
                      siftPar &par);
@@ -120,6 +122,95 @@ void AddSample(float index[IndexSize][IndexSize][OriSize], keypoint &key,
 void PlaceInIndex(float index[IndexSize][IndexSize][OriSize], float mag,
                   float ori, float rx, float cx, siftPar &par);
 
+
+void compute_qsift_keypoints(float *input, keypointslist &keypoints, int width,
+                            int height, siftPar &par) {
+
+  flimage image;
+
+  /// Make zoom of image if necessary
+  float octSize = 1.0;
+  if (par.DoubleImSize) {
+
+    // printf("... compute_sift_keypoints :: applying zoom\n");
+    //		image.create(2*width, 2*height);
+    //		apply_zoom(input,image.getPlane(),2.0,par.order,width,height);
+    //		octSize *= 0.5;
+
+    printf("Doulbe image size not allowed. Guoshen Yu\n");
+    exit(-1);
+
+  } else {
+
+    image.create(width, height, input);
+  }
+
+  // 	 printf("Using initial Dog value: %f\n", par.PeakThresh);
+  //    	 printf("Double image size: %d\n", par.DoubleImSize);
+  //    	 printf("Interpolation order: %d\n", par.order);
+
+  /// Apply initial smoothing to input image to raise its smoothing to
+  /// par.InitSigma. We assume image from camera has smoothing of sigma = 0.5,
+  /// which becomes sigma = 1.0 if image has been doubled. increase =
+  /// sqrt(Init^2 - Current^2)
+  float curSigma;
+  if (par.DoubleImSize)
+    curSigma = 1.0;
+  else
+    curSigma = 0.5;
+
+  if (par.InitSigma > curSigma) {
+
+    if (DEBUG)
+      printf("Convolving initial image to achieve std: %f \n", par.InitSigma);
+
+    float sigma = (float)sqrt(
+        (double)(par.InitSigma * par.InitSigma - curSigma * curSigma));
+
+    qgaussian_convolution(image.getPlane(), image.getPlane(), image.nwidth(),
+                         image.nheight(), sigma, par.qGaussianQ, par.qGaussianB);
+  }
+
+  /// Convolve by par.InitSigma at each step inside OctaveKeypoints by steps of
+  /// Subsample of factor 2 while reasonable image size
+
+  /// Keep reducing image by factors of 2 until one dimension is
+  /// smaller than minimum size at which a feature could be detected.
+  int minsize = 2 * par.BorderDist + 2;
+  int OctaveCounter = 0;
+  // printf("... compute_sift_keypoints :: maximum number of scales : %d\n",
+  // par.OctaveMax);
+
+  while (image.nwidth() > minsize && image.nheight() > minsize &&
+         OctaveCounter < par.OctaveMax) {
+
+    if (DEBUG)
+      printf("Calling OctaveKeypoints \n");
+
+    QOctaveKeypoints(image, octSize, keypoints, par);
+
+    // image is blurred inside OctaveKeypoints and therefore can be sampled
+    flimage aux((int)((float)image.nwidth() / 2.0f),
+                (int)((float)image.nheight() / 2.0f));
+
+    if (DEBUG)
+      printf("Sampling initial image \n");
+
+    sample(image.getPlane(), aux.getPlane(), 2.0f, image.nwidth(),
+           image.nheight());
+
+    image = aux;
+
+    octSize *= 2.0;
+
+    OctaveCounter++;
+  }
+
+  /*	printf("sift::  %d keypoints\n", keypoints.size());
+          printf("sift::  plus non correctly localized: %d \n",
+     par.noncorrectlylocalized);*/
+}
+
 void compute_sift_keypoints(float *input, keypointslist &keypoints, int width,
                             int height, siftPar &par) {
 
@@ -164,8 +255,8 @@ void compute_sift_keypoints(float *input, keypointslist &keypoints, int width,
     float sigma = (float)sqrt(
         (double)(par.InitSigma * par.InitSigma - curSigma * curSigma));
 
-    gaussian_convolution(image.getPlane(), image.getPlane(), image.nwidth(),
-                         image.nheight(), sigma);
+    qgaussian_convolution(image.getPlane(), image.getPlane(), image.nwidth(),
+                         image.nheight(), sigma, par.qGaussianQ, par.qGaussianB);
   }
 
   /// Convolve by par.InitSigma at each step inside OctaveKeypoints by steps of
@@ -212,10 +303,74 @@ void compute_sift_keypoints(float *input, keypointslist &keypoints, int width,
 /// EXTREMA DETECTION IN ONE SCALE-SPACE OCTAVE:
 /////////////////////////////////////////////////
 
+
+//Guilherme
+void QOctaveKeypoints(flimage &image, float octSize, keypointslist &keys,
+                     siftPar &par) {
+  // Guoshen Yu, 2010.09.21, Windows version
+  // flimage blur[par.Scales+3], dogs[par.Scales+2];
+  int size_blur = par.Scales + 3;
+  int size_dogs = par.Scales + 2;
+  flimage *blur = new flimage[size_blur];
+  flimage *dogs = new flimage[size_dogs];
+
+  float sigmaRatio = (float)pow(2.0, 1.0 / (double)par.Scales);
+
+  /* Build array, blur, holding par.Scales+3 blurred versions of the image. */
+  blur[0] = flimage(image); /* First level is input to this routine. */
+  float prevSigma =
+      par.InitSigma; /* Input image has par.InitSigma smoothing. */
+
+  /* Form each level by adding incremental blur from previous level.
+  Increase in blur is from prevSigma to prevSigma * sigmaRatio, so
+  increase^2 = (prevSigma * sigmaRatio)^2 - prevSigma^2
+  */
+  for (int i = 1; i < par.Scales + 3; i++) {
+
+    if (DEBUG)
+      printf("Convolving scale: %d \n", i);
+
+    blur[i] = flimage(blur[i - 1]);
+
+    float increase =
+        prevSigma * (float)sqrt((double)(sigmaRatio * sigmaRatio - 1.0));
+
+    qgaussian_convolution(blur[i].getPlane(), blur[i].getPlane(),
+                         blur[i].nwidth(), blur[i].nheight(), increase, par.qGaussianQ, par.qGaussianB);
+
+    prevSigma *= sigmaRatio;
+  }
+
+  /* Compute an array, dogs, of difference-of-Gaussian images by
+  subtracting each image from its next blurred version. */
+  for (int i = 0; i < par.Scales + 2; i++) {
+
+    dogs[i] = flimage(blur[i]);
+
+    /// dogs[i] = dogs[i] - blur[i+1]
+    combine(dogs[i].getPlane(), 1.0f, blur[i + 1].getPlane(), -1.0f,
+            dogs[i].getPlane(), dogs[i].nwidth() * dogs[i].nheight());
+  }
+
+  // Image with exact blur to be subsampled is blur[scales]
+  image = blur[par.Scales];
+
+  /* Scale-space extrema detection in this octave	*/
+  if (DEBUG)
+    printf("Looking for local maxima \n");
+
+  FindMaxMin(dogs, blur, octSize, keys, par);
+
+  // Guoshen Yu, 2010.09.22, Windows version
+  delete[] blur;
+  delete[] dogs;
+}
+
 /// par.Scales determine how many steps we perform to pass from one scale to the
 /// next one:  sigI --> 2*sigI At each step we pass from    sigma_0 --> sigma0 *
 /// (1 + R) At the last step  sigI * (1 + R)^par.Scales = 2 * sigI (1+R) = 2 ^(1
 /// / par.Scales)  it is called sigmaRatio
+
 
 /// It seems that blur[par.Scales+1] is compared in two succesive iterations
 void OctaveKeypoints(flimage &image, float octSize, keypointslist &keys,

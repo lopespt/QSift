@@ -243,6 +243,24 @@ void separable_convolution(float *u, float *v, int width, int height,float * xke
   free(tmp);
 }
 
+void qgaussian_convolution(float *u, float *v, int width, int height, float sigma, float q, float b)
+{
+
+	int ksize;	
+	float * kernel;
+
+	ksize = (int)(2.0 * 4.0 * sigma + 1.0);
+  kernel = qgauss(1,sigma,&ksize,q,b);
+
+	int boundary = 1;
+
+	copy(u,v,width*height);
+	horizontal_convolution(v, v, width, height, kernel, ksize, boundary);
+    vertical_convolution(v, v, width, height,  kernel,  ksize, boundary);
+	delete[] kernel; /*memcheck*/
+}
+
+
 
 void gaussian_convolution(float *u, float *v, int width, int height, float sigma)
 {
@@ -251,7 +269,7 @@ void gaussian_convolution(float *u, float *v, int width, int height, float sigma
 	float * kernel;
 
 	ksize = (int)(2.0 * 4.0 * sigma + 1.0);
-	kernel = gauss(1,sigma,&ksize);
+  kernel = gauss(1,sigma,&ksize);
 
 	int boundary = 1;
 
