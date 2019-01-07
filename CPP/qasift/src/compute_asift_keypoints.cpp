@@ -500,7 +500,7 @@ int compute_qasift_keypoints(vector<float>& image, int width, int height, int nu
         // compute SIFT keypoints on simulated image. 	 
         keypointslist keypoints;
         keypointslist keypoints_filtered;
-        compute_sift_keypoints(image_tmp1_float,keypoints,width_t,height_t,siftparameters);
+        compute_qsift_keypoints(image_tmp1_float,keypoints,width_t,height_t,siftparameters);
 
         delete[] image_tmp1_float;		
 
