@@ -79,6 +79,7 @@ void runExperiment(QString folder, float q, float b, int from = 0, int to = 0,
 
   tie(foundFrom, foundTo, pattern) = discoverFramesInFolder(folder);
   cerr << "from: " << foundFrom << "to: " << foundTo << endl;
+  cerr << "q: " << q << "b: " << b << endl;
 
   QStringList sl = folder.split("/");
   sl.removeLast();
