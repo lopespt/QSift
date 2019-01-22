@@ -30,7 +30,11 @@ def extract_frames(video, start, end, dest_folder):
 def qasift(*args, **kwargs):
     pasta_imagens, q_val, b_val, steps, start, end = args
 
-    # print("qsift(q_val: %s, b_val %s, steps, %s)" % (float(q_val), float(b_val), int(steps)))
+    print("qasift(q_val: %s, b_val %s, steps %s, video %s)" % (float(q_val),
+                                                                float(b_val),
+                                                                int(steps),
+                                                                pasta_imagens),
+          file=sys.stderr)
 
     def parse_qasift_output(saida, ):
         d = dict(
@@ -45,6 +49,7 @@ def qasift(*args, **kwargs):
 
     p = subprocess.Popen(
         [
+            "optirun",
             "../CPP/qasift/build/OrdenacaoQASift",
             pasta_imagens,
             str(q_val),
@@ -54,16 +59,16 @@ def qasift(*args, **kwargs):
             *ssteps,
         ],
         stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
     )
+    (stdout, stderr) = p.communicate()
     saida = ""
-    while True:
-        x = p.stdout.readline()
-        if b"" == x:
-            break
-        x = x.decode("utf-8")
-        x = x.replace("\n", "").replace("\r", "")
-        x = x.replace(",", ".")
-        saida += x
+    print(stdout)
+    print(stderr)
+    stdout = stdout.decode("utf-8")
+    stdout = stdout.replace("\n", "").replace("\r", "")
+    stdout = stdout.replace(",", ".")
+    saida += stdout
     return parse_qasift_output(saida)
 
 
@@ -160,7 +165,7 @@ def surf(pasta_imagens, hessian_thr, steps=1, start=-1, end=-1):
 def asift(*args, **kwargs):
     pasta_imagens, steps, start, end = args
 
-    # print("qsift(q_val: %s, b_val %s, steps, %s)" % (float(q_val), float(b_val), int(steps)))
+    print("asift(steps %s, video %s)" % (int(steps), pasta_imagens))
 
     def parse_asift_output(saida):
         d = dict(zip(["step", "quality"], saida.split()))
@@ -175,20 +180,25 @@ def asift(*args, **kwargs):
 
     p = subprocess.Popen(
         [
-            "../CPP/asift/build/OrdenacaoASift", pasta_imagens, *start, *end,
+            "optirun",
+            "../CPP/asift/build/OrdenacaoASift",
+            pasta_imagens,
+            *start,
+            *end,
             *steps
         ],
         stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE
     )
     saida = ""
-    while True:
-        x = p.stdout.readline()
-        if b"" == x:
-            break
-        x = x.decode("utf-8")
-        x = x.replace("\n", "").replace("\r", "")
-        x = x.replace(",", ".")
-        saida += x
+    (stdout, stderr) = p.communicate()
+    saida = ""
+    stdout = stdout.decode("utf-8")
+    stdout = stdout.replace("\n", "").replace("\r", "")
+    stdout = stdout.replace(",", ".")
+    saida += stdout
+    print(stdout)
+    print(stderr)
     return parse_asift_output(saida)
 
 

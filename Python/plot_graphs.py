@@ -4,13 +4,14 @@ Plot all graphics from experiments
 
 import json
 import math
+import pandas as pd
 
 import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib import rc
 from scipy.interpolate import griddata
 
-font = {"family": "normal", "size": 20}
+font = {"family": "Dejavu Sans", "size": 20}
 rc("font", **font)
 
 
@@ -137,7 +138,47 @@ def plot_qsift_asift(x, y, x2, y2):
     plt.legend(["q-Sift", "a-Sift"])
     plt.savefig("qsift_asift.png")
 
+def plot_qasift():
+    res = None
+    with open("./results_servidor/qasift.json") as f:
+        res = json.load(f)
 
-x, y = plot_qsift()
-x2, y2 = plot_asift()
-plot_qsift_asift(x, y, x2, y2)
+    videos = np.unique([x["parameters"][1] for x in res])
+    media = {}
+
+    for video in videos:
+        step, quality = zip(*[(x["result"]["step"], x["result"]["quality"])
+                              for x in res if x["parameters"][1] == video
+                              and not math.isnan(x["result"]["quality"])])
+        step, quality = zip(*sorted(zip(step, quality), key=lambda x: x[0]))
+        if len(step) < 4:
+            continue
+
+        # media.append(quality)
+        for x, y in zip(step, quality):
+            if x not in media:
+                media[x] = []
+            media[x].append(y)
+
+    plt.close("all")
+    print(media.keys())
+    mediaValues = [np.mean(media[i]) for i in sorted(media.keys())]
+    print(mediaValues)
+    plt.title("Nota média ASIFT")
+    plt.xlabel("step")
+    plt.ylabel("nota")
+    x = sorted(media.keys())
+    y = mediaValues
+    plt.plot(x, y)
+    plt.savefig("asift.png")
+    return x, y
+
+
+# x, y = plot_qsift()
+# x2, y2 = plot_asift()
+# plot_qsift_asift(x, y, x2, y2)
+
+# plot_qasift()
+
+
+

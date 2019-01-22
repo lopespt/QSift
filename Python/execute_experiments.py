@@ -56,6 +56,7 @@ def execute(fout, func, parameters):
                     json.dump(runs, f, indent=4)
 
             proc.apply_async(runner, (func, x), callback=callback)
+            # tq.update(1)
         else:
             tq.update(1)
         tq.refresh()
@@ -133,8 +134,9 @@ def arange(start, end, step):
 #                         "surf.json")
 
 # execute_surf_experiments()
-#execute_asift_experiments(pastas, arange(1, 200, 5), "asift.json")
 
-execute_qasift_experiments(pastas, np.setdiff1d(arange(0.2, 1.8, 0.2), [1]),
+execute_qasift_experiments([pastas[0]], np.setdiff1d(arange(0.2, 1.8, 0.4), [1]),
                            [0.5, 1, 1.5, 2, 2.5],
-                           arange(1, 200, 5), "qasift.json")
+                           arange(4, 200, 10), "qasift.json")
+
+# execute_asift_experiments(pastas, arange(1, 200, 5), "asift.json")
